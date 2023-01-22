@@ -10,11 +10,7 @@ public:
 	HpBar(int hp, sf::Sprite* parent);
 	~HpBar() = default;
 
-	/*HpBar(const HpBar& other);
-	HpBar(HpBar&& other);
-	HpBar& operator=(const HpBar& other);*/
-
-	void update(int hp);
+	void update(int hp, sf::Sprite* _parent);
 	void render(sf::RenderTarget* target);
 
 private:

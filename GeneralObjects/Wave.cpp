@@ -28,7 +28,7 @@ void Wave::initWave(int id)
 	std::string filePath = "Config/Waves/" + std::to_string(id) + "_wave.ini";
 	std::ifstream ifs(filePath);
 
-	if (!ifs.is_open()) throw std::exception("Wave id not found", id);
+	if (!ifs.is_open()) throw std::exception("Wave is not found", id);
 
 	int idTexture;
 

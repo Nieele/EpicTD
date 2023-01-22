@@ -39,7 +39,7 @@ private:
     bool _reachedEnd = false;
     int _loot;
 
-    std::shared_ptr<HpBar> _hpBar;
+    HpBar* _hpBar;
 
     int _idTrajectory;
     float _movementSpeed;

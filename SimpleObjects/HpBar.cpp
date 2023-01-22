@@ -9,25 +9,13 @@ HpBar::HpBar(int hp, sf::Sprite* parent) : _maxHp(hp), _currentHp(hp), _parent(p
 	_bar.setFillColor(sf::Color::Red);
 }
 
-//HpBar::HpBar(const HpBar& other)
-//{
-//}
-//
-//HpBar::HpBar(HpBar&& other)
-//{
-//}
-//
-//HpBar& HpBar::operator=(const HpBar& other)
-//{
-//	// TODO: вставьте здесь оператор return
-//}
-
-void HpBar::update(int hp)
+void HpBar::update(int hp, sf::Sprite* parent)
 {
 	if (_parent) {
 		_bar.setPosition(_parent->getPosition().x + _shiftHpBar_x, _parent->getPosition().y);
 		if (_currentHp != hp) {
 			_currentHp = hp;
+			_parent = parent;
 			_bar.setSize(sf::Vector2f(_sizeHpBar.x * (_currentHp / _maxHp), _sizeHpBar.y));
 		}
 	}

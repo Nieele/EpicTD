@@ -11,13 +11,13 @@ Tower::Tower(const sf::Vector2f& pos, const Configuration::Textures towerTexture
 	_towerObject.setTexture(Configuration::textures.get(towerTexture));
 
 	_weapon = sf::Sprite(Configuration::textures.get(weaponTexture));
-	_weapon.setOrigin(32, 32);
-	_weapon.setScale(1.5, 1.5);
+	_weapon.setOrigin(48, 48);
+	_weapon.setScale(1, 1);
 	_weapon.setPosition(sf::Vector2f(pos.x + 32, pos.y + 32 + 24));
 
 	_animationWeapon = new AnimationHelper(&_weapon, Configuration::textures.get(weaponTexture));
-	_animationWeapon->addAnimation("Wait", 50.f, 0, 0, 0, 0, 64, 64);
-	_animationWeapon->addAnimation("Attack", 160.f, 0, 0, 5, 0, 64, 64);
+	_animationWeapon->addAnimation("Wait", 50.f, 0, 0, 0, 0, 96, 96);
+	_animationWeapon->addAnimation("Attack", 160.f, 0, 0, 5, 0, 96, 96);
 }
 
 Tower::~Tower()
@@ -98,8 +98,8 @@ void Tower::update(const Chronometer& timer, Wave* wave)
 
 	if (_targetEnemy) {
 		// turn on the enemy
-		_weapon.setRotation(-(atan2f(_targetEnemy->getPosition().x - _weapon.getPosition().x,
-			_targetEnemy->getPosition().y - _weapon.getPosition().y)) * 180 / std::numbers::pi + 180);
+		_weapon.setRotation(-(atan2f(_targetEnemy->getPosition().x + 32 - _weapon.getPosition().x,
+			_targetEnemy->getPosition().y + 32 - _weapon.getPosition().y)) * 180 / std::numbers::pi + 180);
 
 		// update flight trajectory
 		for (size_t i = 0; i < _bullets.size(); ++i) {

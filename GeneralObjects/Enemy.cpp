@@ -13,11 +13,13 @@ Enemy::Enemy(const float x, const float y, sf::Texture& textureSheet, int hp, in
 	: Entity(x, y, textureSheet), _hp(hp), _rotation(rotation), _idTrajectory(0), _movementSpeed((float)0.5), _loot(loot)
 {
 	initAnimations(textureSheet);
-	_hpBar = std::make_shared<HpBar>(hp, _sprite);
+	_hpBar = new HpBar(hp, _sprite);
 }
 
 Enemy::~Enemy()
 {
+	delete _hpBar;
+	_hpBar = nullptr;
 }
 
 Enemy::Enemy(const Enemy& other)
@@ -35,7 +37,7 @@ Enemy::Enemy(const Enemy& other)
 	_reachedEnd = other._reachedEnd;
 	_loot = other._loot;
 
-	_hpBar = other._hpBar;
+	_hpBar = new HpBar(_hp, _sprite);
 
 	_idTrajectory = other._idTrajectory;
 	_movementSpeed = other._movementSpeed;
@@ -43,6 +45,8 @@ Enemy::Enemy(const Enemy& other)
 
 Enemy::Enemy(Enemy&& other) noexcept
 {
+	_hpBar = std::move(other._hpBar);
+
 	_sprite = std::move(other._sprite);
 	//other._sprite = nullptr;
 
@@ -55,7 +59,6 @@ Enemy::Enemy(Enemy&& other) noexcept
 	_reachedEnd = other._reachedEnd;
 	_loot = other._loot;
 
-	_hpBar = std::move(other._hpBar);
 	//other._hpBar = nullptr;
 
 	_idTrajectory = other._idTrajectory;
@@ -78,7 +81,8 @@ Enemy& Enemy::operator=(const Enemy& other)
 		_reachedEnd = other._reachedEnd;
 		_loot = other._loot;
 
-		_hpBar = other._hpBar;
+		delete _hpBar;
+		_hpBar = new HpBar(_hp, _sprite);
 
 		_idTrajectory = other._idTrajectory;
 		_movementSpeed = other._movementSpeed;
@@ -185,12 +189,12 @@ void Enemy::update(const std::vector<sf::Vector2f>& movementTrajectory)
 	animationInDirection();
 	checkIsAlive();
 
-	_hpBar->update(_hp);
+	_hpBar->update(_hp, _sprite);
 }
 
 void Enemy::render(sf::RenderTarget* target)
 {
-	_hpBar->render(target);
 	Entity::render(target);
+	_hpBar->render(target);
 }
 

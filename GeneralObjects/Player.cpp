@@ -1,6 +1,6 @@
 #include "Player.hpp"
 
-Player::Player() : _hp(60), _balance(999999)
+Player::Player() : _hp(5), _balance(500)
 {
 }
 
