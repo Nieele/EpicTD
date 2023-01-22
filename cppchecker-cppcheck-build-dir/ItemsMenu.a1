@@ -1,61 +1,187 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="10129659091332078408">
+<analyzerinfo hash="469079247610570783">
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_startRect&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_startRect&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="D:/Desktop/EpicTD/Menu/ItemsMenu.cpp">
+            <location file="D:\Desktop\EpicTD\Helpers\AnimationHelper.hpp" line="32" column="4"/>
+            <symbol>_startRect</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Item&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Item&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/Menu/ItemsMenu.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Item.hpp" line="10" column="2"/>
+            <symbol>Item</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/Menu/ItemsMenu.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Object.hpp" line="11" column="2"/>
+            <symbol>Object</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Chronometer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Chronometer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/Menu/ItemsMenu.cpp">
+            <location file="D:\Desktop\EpicTD\Components\Chronometer.hpp" line="8" column="2"/>
+            <symbol>Chronometer</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;render&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;render&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="D:/Desktop/EpicTD/Menu/ItemsMenu.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\CellMap.hpp" line="25" column="7" info="Function in derived class"/>
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Object.hpp" line="21" column="15" info="Virtual function in base class"/>
+            <symbol>render</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="Chronometer" file="D:/Desktop/EpicTD/Components/Chronometer.hpp" line="5" col="1" hash="5195486279192488712"/>
+<class name="AnimationHelper::Animation" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="25" col="2" hash="5961552475965910384"/>
+<class name="ItemsMenu" file="D:/Desktop/EpicTD/Menu/ItemsMenu.hpp" line="17" col="1" hash="18046520764345168453"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Menu/ItemsMenu.hpp:25:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/Menu/ItemsMenu.cpp" line="39" col="2" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Menu/ItemsMenu.hpp:22:7" my-argnr="1" my-argname="event" file="D:/Desktop/EpicTD/Menu/ItemsMenu.cpp" line="11" col="6" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Menu/ItemsMenu.hpp:25:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/Menu/ItemsMenu.cpp" line="39" col="2" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Menu/ItemsMenu.hpp:28:7" my-argnr="1" my-argname="pos" file="D:/Desktop/EpicTD/Menu/ItemsMenu.cpp" line="45" col="6" value="0"/>
+  </FileInfo>
   <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="processEvent" lineNumber="9"/>
+    <functiondecl functionName="update" lineNumber="31"/>
+    <functiondecl functionName="render" lineNumber="37"/>
+    <functiondecl functionName="placeTower" lineNumber="43"/>
+    <functioncall functionName="AnimationHelper"/>
+    <functioncall functionName="Args"/>
+    <functioncall functionName="AttackGalacticTower"/>
+    <functioncall functionName="AttackStoneTower"/>
+    <functioncall functionName="AttackWoodTower"/>
+    <functioncall functionName="Bullet"/>
+    <functioncall functionName="CellMap"/>
+    <functioncall functionName="Configuration"/>
+    <functioncall functionName="DOWN"/>
+    <functioncall functionName="Enemy"/>
+    <functioncall functionName="Entity"/>
+    <functioncall functionName="Font"/>
     <functioncall functionName="GalacticTower"/>
     <functioncall functionName="GalacticTower_bullet"/>
     <functioncall functionName="GalacticTower_weapon"/>
+    <functioncall functionName="GameBack"/>
+    <functioncall functionName="GameGUI"/>
+    <functioncall functionName="GameMap"/>
+    <functioncall functionName="GameOver"/>
+    <functioncall functionName="GameOverTheme"/>
+    <functioncall functionName="GameWin"/>
+    <functioncall functionName="HpBar"/>
+    <functioncall functionName="IDENTIFIER"/>
+    <functioncall functionName="InfoMenu"/>
+    <functioncall functionName="IntRect"/>
+    <functioncall functionName="Item"/>
     <functioncall functionName="ItemsMenu"/>
+    <functioncall functionName="LeafbugEnemy"/>
+    <functioncall functionName="MagmaCrab"/>
+    <functioncall functionName="MainMenu"/>
+    <functioncall functionName="MainTheme"/>
+    <functioncall functionName="MenuGUI"/>
+    <functioncall functionName="Music"/>
+    <functioncall functionName="Object"/>
+    <functioncall functionName="PAUSED"/>
+    <functioncall functionName="PauseMenu"/>
+    <functioncall functionName="RESOURCE"/>
+    <functioncall functionName="RUNNING"/>
+    <functioncall functionName="ResourceManager"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Font , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: SoundBuffer , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Texture , int &gt;"/>
+    <functioncall functionName="STOPPED"/>
+    <functioncall functionName="Scorpion"/>
+    <functioncall functionName="SoundBuffer"/>
     <functioncall functionName="StoneTower"/>
     <functioncall functionName="StoneTower_bullet"/>
     <functioncall functionName="StoneTower_weapon"/>
+    <functioncall functionName="Texture"/>
     <functioncall functionName="Tower"/>
     <functioncall functionName="Vector2f"/>
     <functioncall functionName="WoodTower"/>
     <functioncall functionName="WoodTower_bullet"/>
     <functioncall functionName="WoodTower_weapon"/>
+    <functioncall functionName="Zero"/>
+    <functioncall functionName="_animationTimer"/>
     <functioncall functionName="_background"/>
+    <functioncall functionName="_currentRect"/>
+    <functioncall functionName="_height"/>
     <functioncall functionName="_movingDeltaCord"/>
     <functioncall functionName="_movingItem"/>
+    <functioncall functionName="_sprite"/>
+    <functioncall functionName="_startRect"/>
+    <functioncall functionName="_textureSheet"/>
+    <functioncall functionName="_timer"/>
+    <functioncall functionName="_width"/>
+    <functioncall functionName="add"/>
+    <functioncall functionName="animationTimer"/>
+    <functioncall functionName="args"/>
+    <functioncall functionName="at"/>
     <functioncall functionName="break"/>
     <functioncall functionName="changeBalance"/>
+    <functioncall functionName="const"/>
     <functioncall functionName="contains"/>
     <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
     <functioncall functionName="draw"/>
+    <functioncall functionName="emplace"/>
     <functioncall functionName="exception"/>
     <functioncall functionName="false"/>
     <functioncall functionName="float"/>
     <functioncall functionName="for"/>
-    <functioncall functionName="gameMap"/>
+    <functioncall functionName="forward"/>
+    <functioncall functionName="gameField"/>
     <functioncall functionName="get"/>
     <functioncall functionName="getBalance"/>
+    <functioncall functionName="getElapsedTime"/>
     <functioncall functionName="getGlobalBounds"/>
     <functioncall functionName="getId"/>
     <functioncall functionName="getPosition"/>
     <functioncall functionName="getSprite"/>
+    <functioncall functionName="height"/>
     <functioncall functionName="i"/>
+    <functioncall functionName="id"/>
     <functioncall functionName="if"/>
+    <functioncall functionName="initialTime"/>
     <functioncall functionName="int"/>
-    <functioncall functionName="isOccupiedBlock"/>
+    <functioncall functionName="isOccupiedCell"/>
     <functioncall functionName="isPlaced"/>
+    <functioncall functionName="isRunning"/>
     <functioncall functionName="j"/>
+    <functioncall functionName="left"/>
+    <functioncall functionName="loadFromFile"/>
+    <functioncall functionName="m_state"/>
+    <functioncall functionName="make_shared"/>
     <functioncall functionName="mousePos"/>
-    <functioncall functionName="occupyBlock"/>
+    <functioncall functionName="move"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="occupyCell"/>
+    <functioncall functionName="openFromFile"/>
+    <functioncall functionName="operatorsf::Time"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="pause"/>
     <functioncall functionName="placeTower"/>
     <functioncall functionName="player"/>
     <functioncall functionName="pos"/>
+    <functioncall functionName="ptr"/>
     <functioncall functionName="push_back"/>
+    <functioncall functionName="render"/>
     <functioncall functionName="reset"/>
+    <functioncall functionName="restart"/>
+    <functioncall functionName="resume"/>
     <functioncall functionName="round"/>
+    <functioncall functionName="runtime_error"/>
     <functioncall functionName="select"/>
     <functioncall functionName="setPosition"/>
     <functioncall functionName="setTexture"/>
+    <functioncall functionName="setTextureRect"/>
+    <functioncall functionName="shared_ptr"/>
     <functioncall functionName="size"/>
+    <functioncall functionName="sprite"/>
+    <functioncall functionName="start"/>
+    <functioncall functionName="string"/>
     <functioncall functionName="swap"/>
     <functioncall functionName="switch"/>
     <functioncall functionName="target"/>
     <functioncall functionName="temp"/>
+    <functioncall functionName="textureSheet"/>
     <functioncall functionName="towers"/>
     <functioncall functionName="true"/>
+    <functioncall functionName="typename"/>
+    <functioncall functionName="vector"/>
+    <functioncall functionName="width"/>
     <functioncall functionName="x"/>
     <functioncall functionName="y"/>
   </FileInfo>

@@ -13,7 +13,7 @@ class Bullet
 {
 public:
 	Bullet(const sf::Texture& texture, const sf::Vector2f& spawnPos, const sf::Vector2f& enemyPos);
-	virtual ~Bullet();
+	virtual ~Bullet() = default;
 
 	bool isReachedEnemy(std::shared_ptr<Enemy> target);
 	bool isReachedEnemy();

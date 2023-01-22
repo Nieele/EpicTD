@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="6693220869240169690">
+<analyzerinfo hash="1993774212676577692">
         <error id="useInitializationList" severity="performance" msg="Variable &apos;_startRect&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_startRect&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="D:/Desktop/EpicTD/States/GameState.cpp">
             <location file="D:\Desktop\EpicTD\Helpers\AnimationHelper.hpp" line="32" column="4"/>
             <symbol>_startRect</symbol>
@@ -16,27 +16,29 @@
             <location file="D:\Desktop\EpicTD\SimpleObjects\Object.hpp" line="11" column="2"/>
             <symbol>Object</symbol>
         </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Item&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Item&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/States/GameState.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Item.hpp" line="10" column="2"/>
+            <symbol>Item</symbol>
+        </error>
         <error id="missingOverride" severity="style" msg="The function &apos;render&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;render&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="D:/Desktop/EpicTD/States/GameState.cpp">
             <location file="D:\Desktop\EpicTD\SimpleObjects\CellMap.hpp" line="25" column="7" info="Function in derived class"/>
             <location file="D:\Desktop\EpicTD\SimpleObjects\Object.hpp" line="21" column="15" info="Virtual function in base class"/>
             <symbol>render</symbol>
         </error>
   <FileInfo check="ctu">
-<function-call call-id="D:/Desktop/EpicTD/States/PauseMenuState.hpp:16:2" call-funcname="PauseMenuState" call-argnr="4" file="D:/Desktop/EpicTD/States/GameState.cpp" line="23" col="36" call-argexpr="&amp;_timer" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Desktop/EpicTD/States/PauseMenuState.hpp:16:2" call-funcname="PauseMenuState" call-argnr="4" file="D:/Desktop/EpicTD/States/GameState.cpp" line="29" col="35" call-argexpr="&amp;_timer" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+<function-call call-id="D:/Desktop/EpicTD/States/PauseMenuState.hpp:16:2" call-funcname="PauseMenuState" call-argnr="4" file="D:/Desktop/EpicTD/States/GameState.cpp" line="23" col="36" call-argexpr="&amp;_timer" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
   <FileInfo check="Class">
 <class name="Chronometer" file="D:/Desktop/EpicTD/Components/Chronometer.hpp" line="5" col="1" hash="5195486279192488712"/>
-<class name="AnimationHelper::Animation" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="25" col="2" hash="17799459738175156914"/>
-<class name="GameState" file="D:/Desktop/EpicTD/States/GameState.hpp" line="18" col="1" hash="3870624148047067256"/>
+<class name="AnimationHelper::Animation" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="25" col="2" hash="5961552475965910384"/>
+<class name="GameState" file="D:/Desktop/EpicTD/States/GameState.hpp" line="18" col="1" hash="921834227117077056"/>
   </FileInfo>
   <FileInfo check="Uninitialized variables">
-    <unsafe-usage my-id="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp:50:14" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="51" col="14" value="0"/>
     <unsafe-usage my-id="D:/Desktop/EpicTD/States/GameState.hpp:25:7" my-argnr="1" my-argname="event" file="D:/Desktop/EpicTD/States/GameState.cpp" line="20" col="6" value="0"/>
   </FileInfo>
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="processEvents" lineNumber="18"/>
     <functiondecl functionName="update" lineNumber="47"/>
     <functiondecl functionName="render" lineNumber="69"/>
-    <functioncall functionName="Animation"/>
     <functioncall functionName="AnimationHelper"/>
     <functioncall functionName="Args"/>
     <functioncall functionName="AttackGalacticTower"/>
@@ -64,9 +66,11 @@
     <functioncall functionName="GameOverTheme"/>
     <functioncall functionName="GameState"/>
     <functioncall functionName="GameWin"/>
+    <functioncall functionName="HpBar"/>
     <functioncall functionName="IDENTIFIER"/>
     <functioncall functionName="InfoMenu"/>
     <functioncall functionName="IntRect"/>
+    <functioncall functionName="Item"/>
     <functioncall functionName="ItemsMenu"/>
     <functioncall functionName="LeafbugEnemy"/>
     <functioncall functionName="MagmaCrab"/>
@@ -102,7 +106,6 @@
     <functioncall functionName="_animationTimer"/>
     <functioncall functionName="_background"/>
     <functioncall functionName="_currentRect"/>
-    <functioncall functionName="_endRect"/>
     <functioncall functionName="_font"/>
     <functioncall functionName="_height"/>
     <functioncall functionName="_level"/>
@@ -168,7 +171,6 @@
     <functioncall functionName="reset"/>
     <functioncall functionName="restart"/>
     <functioncall functionName="resume"/>
-    <functioncall functionName="return"/>
     <functioncall functionName="runtime_error"/>
     <functioncall functionName="setTexture"/>
     <functioncall functionName="setTextureRect"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="8138628844848778504">
+<analyzerinfo hash="2159799794953415573">
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/CellMap.cpp">
             <location file="D:\Desktop\EpicTD\SimpleObjects\Object.hpp" line="11" column="2"/>
             <symbol>Object</symbol>
@@ -10,18 +10,27 @@
             <symbol>render</symbol>
         </error>
   <FileInfo check="Null pointer">
-    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/CellMap.hpp:18:7" my-argnr="1" my-argname="texture" file="D:/Desktop/EpicTD/SimpleObjects/CellMap.cpp" line="30" col="23" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/CellMap.hpp:18:7" my-argnr="1" my-argname="texture" file="D:/Desktop/EpicTD/SimpleObjects/CellMap.cpp" line="32" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/CellMap.hpp:14:2" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/SimpleObjects/CellMap.cpp" line="6" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/CellMap.hpp:15:2" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/SimpleObjects/CellMap.cpp" line="12" col="22" value="0"/>
   </FileInfo>
   <FileInfo check="CheckUnusedFunctions">
-    <functiondecl functionName="setBlock" lineNumber="27"/>
-    <functiondecl functionName="occupy" lineNumber="36"/>
-    <functiondecl functionName="free" lineNumber="41"/>
-    <functiondecl functionName="isOccupied" lineNumber="46"/>
-    <functiondecl functionName="render" lineNumber="51"/>
+    <functiondecl functionName="setCell" lineNumber="29"/>
+    <functiondecl functionName="occupy" lineNumber="38"/>
+    <functiondecl functionName="free" lineNumber="43"/>
+    <functiondecl functionName="isOccupied" lineNumber="48"/>
+    <functiondecl functionName="render" lineNumber="53"/>
+    <functioncall functionName="CellMap"/>
     <functioncall functionName="Object"/>
+    <functioncall functionName="_occupied"/>
+    <functioncall functionName="_sprite"/>
     <functioncall functionName="const"/>
     <functioncall functionName="default"/>
     <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="move"/>
     <functioncall functionName="noexcept"/>
     <functioncall functionName="pos"/>
     <functioncall functionName="rectTexture"/>

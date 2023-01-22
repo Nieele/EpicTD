@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="14279469608424584484">
+<analyzerinfo hash="14952300591433215119">
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="isAlive" lineNumber="7"/>
     <functiondecl functionName="getHp" lineNumber="12"/>

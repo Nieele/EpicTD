@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="1108224028458604347">
+<analyzerinfo hash="7766000733091690417">
         <error id="useInitializationList" severity="performance" msg="Variable &apos;_startRect&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_startRect&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp">
             <location file="D:\Desktop\EpicTD\Helpers\AnimationHelper.hpp" line="32" column="4"/>
             <symbol>_startRect</symbol>
@@ -9,32 +9,31 @@
             <symbol>Object</symbol>
         </error>
   <FileInfo check="Class">
-<class name="AnimationHelper::Animation" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="25" col="2" hash="17799459738175156914"/>
-<class name="Enemy" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp" line="11" col="1" hash="15364948096681807923"/>
+<class name="AnimationHelper::Animation" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="25" col="2" hash="5961552475965910384"/>
+<class name="Enemy" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp" line="11" col="1" hash="6403543418500520162"/>
   </FileInfo>
   <FileInfo check="Null pointer">
-    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:49:10" my-argnr="1" my-argname="movementTrajectory" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="118" col="32" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:49:10" my-argnr="1" my-argname="movementTrajectory" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="115" col="32" value="0"/>
   </FileInfo>
   <FileInfo check="Uninitialized variables">
-    <unsafe-usage my-id="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp:50:14" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="51" col="14" value="0"/>
-    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:24:5" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="48" col="12" value="0"/>
-    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:48:10" my-argnr="1" my-argname="movementTrajectory" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="110" col="34" value="0"/>
-    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:49:10" my-argnr="1" my-argname="movementTrajectory" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="118" col="32" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:23:5" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="27" col="12" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:24:5" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="46" col="22" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:48:10" my-argnr="1" my-argname="movementTrajectory" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="107" col="34" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:49:10" my-argnr="1" my-argname="movementTrajectory" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="115" col="32" value="0"/>
   </FileInfo>
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="initAnimations" lineNumber="3"/>
-    <functiondecl functionName="isAlive" lineNumber="92"/>
-    <functiondecl functionName="isReachedEnd" lineNumber="98"/>
-    <functiondecl functionName="changeHp" lineNumber="103"/>
-    <functiondecl functionName="checkReachedEnd" lineNumber="108"/>
-    <functiondecl functionName="changeDirectionMovement" lineNumber="114"/>
-    <functiondecl functionName="moveInDirection" lineNumber="125"/>
-    <functiondecl functionName="moveAlongMotionVector" lineNumber="149"/>
-    <functiondecl functionName="animationInDirection" lineNumber="158"/>
-    <functiondecl functionName="checkIsAlive" lineNumber="180"/>
-    <functiondecl functionName="update" lineNumber="185"/>
-    <functiondecl functionName="render" lineNumber="194"/>
-    <functioncall functionName="Animation"/>
+    <functiondecl functionName="isAlive" lineNumber="90"/>
+    <functiondecl functionName="isReachedEnd" lineNumber="95"/>
+    <functiondecl functionName="changeHp" lineNumber="100"/>
+    <functiondecl functionName="checkReachedEnd" lineNumber="105"/>
+    <functiondecl functionName="changeDirectionMovement" lineNumber="111"/>
+    <functiondecl functionName="moveInDirection" lineNumber="122"/>
+    <functiondecl functionName="moveAlongMotionVector" lineNumber="146"/>
+    <functiondecl functionName="animationInDirection" lineNumber="155"/>
+    <functiondecl functionName="checkIsAlive" lineNumber="177"/>
+    <functiondecl functionName="update" lineNumber="182"/>
+    <functiondecl functionName="render" lineNumber="191"/>
     <functioncall functionName="AnimationHelper"/>
     <functioncall functionName="Args"/>
     <functioncall functionName="AttackGalacticTower"/>
@@ -76,7 +75,6 @@
     <functioncall functionName="ResourceManager &lt; sf :: Texture , int &gt;"/>
     <functioncall functionName="Scorpion"/>
     <functioncall functionName="SoundBuffer"/>
-    <functioncall functionName="Sprite"/>
     <functioncall functionName="StoneTower"/>
     <functioncall functionName="StoneTower_bullet"/>
     <functioncall functionName="StoneTower_weapon"/>
@@ -89,7 +87,6 @@
     <functioncall functionName="_animationComponent"/>
     <functioncall functionName="_animationTimer"/>
     <functioncall functionName="_currentRect"/>
-    <functioncall functionName="_endRect"/>
     <functioncall functionName="_height"/>
     <functioncall functionName="_hp"/>
     <functioncall functionName="_hpBar"/>
@@ -132,6 +129,7 @@
     <functioncall functionName="left"/>
     <functioncall functionName="loadFromFile"/>
     <functioncall functionName="loot"/>
+    <functioncall functionName="make_shared"/>
     <functioncall functionName="move"/>
     <functioncall functionName="moveAlongMotionVector"/>
     <functioncall functionName="moveInDirection"/>
@@ -143,7 +141,6 @@
     <functioncall functionName="play"/>
     <functioncall functionName="ptr"/>
     <functioncall functionName="render"/>
-    <functioncall functionName="return"/>
     <functioncall functionName="rotation"/>
     <functioncall functionName="runtime_error"/>
     <functioncall functionName="setPosition"/>

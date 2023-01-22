@@ -11,6 +11,9 @@
         <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Object&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Object&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Game.cpp" sinceDate="dd.MM.yyyy">
             <location file="SimpleObjects\Object.hpp" line="11"/>
         </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Item&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Item&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Game.cpp" sinceDate="dd.MM.yyyy">
+            <location file="SimpleObjects\Item.hpp" line="10"/>
+        </error>
         <error id="missingOverride" severity="style" msg="The function &amp;#039;render&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." verbose="The function &amp;#039;render&amp;#039; overrides a function in a base class but is not marked with a &amp;#039;override&amp;#039; specifier." file0="Game.cpp" sinceDate="dd.MM.yyyy">
             <location file="SimpleObjects\CellMap.hpp" line="25" info="Function in derived class"/>
             <location file="SimpleObjects\Object.hpp" line="21" info="Virtual function in base class"/>
@@ -36,18 +39,8 @@
         <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;_weapon&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;_weapon&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="GeneralObjects/Tower.cpp" sinceDate="dd.MM.yyyy">
             <location file="GeneralObjects\Tower.cpp" line="56"/>
         </error>
-        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;_bulletTexture&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;_bulletTexture&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="GeneralObjects/Tower.cpp" sinceDate="dd.MM.yyyy">
-            <location file="GeneralObjects\Tower.cpp" line="60"/>
-        </error>
-        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;_bullets&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;_bullets&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="GeneralObjects/Tower.cpp" sinceDate="dd.MM.yyyy">
-            <location file="GeneralObjects\Tower.cpp" line="61"/>
-        </error>
-        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: _targetEnemy" verbose="Possible null pointer dereference: _targetEnemy" cwe="476" file0="GeneralObjects/Tower.cpp" sinceDate="dd.MM.yyyy">
-            <location file="GeneralObjects\Tower.cpp" line="130" info="Null pointer dereference"/>
-            <location file="GeneralObjects\Tower.cpp" line="128" info="Assignment &amp;#039;_targetEnemy=nullptr&amp;#039;, assigned value is 0"/>
-        </error>
         <error id="constVariable" severity="style" msg="Variable &amp;#039;el&amp;#039; can be declared as reference to const" verbose="Variable &amp;#039;el&amp;#039; can be declared as reference to const" cwe="398" file0="GeneralObjects/Tower.cpp" sinceDate="dd.MM.yyyy">
-            <location file="GeneralObjects\Tower.cpp" line="150"/>
+            <location file="GeneralObjects\Tower.cpp" line="148"/>
         </error>
         <error id="constVariable" severity="style" msg="Variable &amp;#039;el&amp;#039; can be declared as reference to const" verbose="Variable &amp;#039;el&amp;#039; can be declared as reference to const" cwe="398" file0="Helpers/AnimationHelper.cpp" sinceDate="dd.MM.yyyy">
             <location file="Helpers\AnimationHelper.cpp" line="20"/>
@@ -55,14 +48,14 @@
         <error id="constVariable" severity="style" msg="Variable &amp;#039;el&amp;#039; can be declared as reference to const" verbose="Variable &amp;#039;el&amp;#039; can be declared as reference to const" cwe="398" file0="Helpers/AnimationHelper.cpp" sinceDate="dd.MM.yyyy">
             <location file="Helpers\AnimationHelper.cpp" line="44"/>
         </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;textureSheet&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;textureSheet&amp;#039; can be declared as reference to const" cwe="398" file0="SimpleObjects/Entity.cpp" sinceDate="dd.MM.yyyy">
+            <location file="SimpleObjects\Entity.cpp" line="42"/>
+        </error>
         <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;_sprite&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;_sprite&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="SimpleObjects/Item.cpp" sinceDate="dd.MM.yyyy">
             <location file="SimpleObjects\Item.cpp" line="20"/>
         </error>
         <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;_sprite&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;_sprite&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="SimpleObjects/Item.cpp" sinceDate="dd.MM.yyyy">
             <location file="SimpleObjects\Item.cpp" line="27"/>
-        </error>
-        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Item&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Item&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="SimpleObjects/Item.cpp" sinceDate="dd.MM.yyyy">
-            <location file="SimpleObjects\Item.hpp" line="10"/>
         </error>
         <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;_font&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;_font&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="States/GameState.cpp" sinceDate="dd.MM.yyyy">
             <location file="States\GameState.cpp" line="5"/>
@@ -72,6 +65,9 @@
         </error>
         <error id="constVariable" severity="style" msg="Variable &amp;#039;el&amp;#039; can be declared as reference to const" verbose="Variable &amp;#039;el&amp;#039; can be declared as reference to const" cwe="398" file0="States/MainMenuState.cpp" sinceDate="dd.MM.yyyy">
             <location file="States\MainMenuState.cpp" line="29"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;freeCell&amp;#039; is never used." verbose="The function &amp;#039;freeCell&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="GeneralObjects\GameField.cpp" line="63"/>
         </error>
     </errors>
 </results>

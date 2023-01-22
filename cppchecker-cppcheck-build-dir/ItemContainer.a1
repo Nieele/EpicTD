@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="13980602384285670492">
+<analyzerinfo hash="4875529261373123945">
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;Item&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Item&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/ItemContainer.cpp">
             <location file="D:\Desktop\EpicTD\SimpleObjects\Item.hpp" line="10" column="2"/>
             <symbol>Item</symbol>
         </error>
   <FileInfo check="Class">
-<class name="ItemContainer" file="D:/Desktop/EpicTD/SimpleObjects/ItemContainer.hpp" line="7" col="1" hash="8709365424150739897"/>
+<class name="ItemContainer" file="D:/Desktop/EpicTD/SimpleObjects/ItemContainer.hpp" line="7" col="1" hash="5648998924502501371"/>
   </FileInfo>
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="size" lineNumber="11"/>
     <functiondecl functionName="select" lineNumber="21"/>
     <functiondecl functionName="reset" lineNumber="27"/>
-    <functiondecl functionName="draw" lineNumber="43"/>
+    <functiondecl functionName="render" lineNumber="43"/>
     <functioncall functionName="Args"/>
     <functioncall functionName="AttackGalacticTower"/>
     <functioncall functionName="AttackStoneTower"/>

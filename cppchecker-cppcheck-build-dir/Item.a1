@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="3306535187947850145">
+<analyzerinfo hash="3106334318659347121">
         <error id="useInitializationList" severity="performance" msg="Variable &apos;_sprite&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_sprite&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/Item.cpp">
             <location file="D:\Desktop\EpicTD\SimpleObjects\Item.cpp" line="20" column="5"/>
             <symbol>_sprite</symbol>
@@ -13,7 +13,7 @@
             <symbol>Item</symbol>
         </error>
   <FileInfo check="Class">
-<class name="Item" file="D:/Desktop/EpicTD/SimpleObjects/Item.hpp" line="7" col="1" hash="11211915736047972581"/>
+<class name="Item" file="D:/Desktop/EpicTD/SimpleObjects/Item.hpp" line="7" col="1" hash="4224189478983748252"/>
   </FileInfo>
   <FileInfo check="Null pointer">
     <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Item.hpp:22:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/SimpleObjects/Item.cpp" line="61" col="5" value="0"/>

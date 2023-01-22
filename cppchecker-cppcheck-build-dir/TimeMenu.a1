@@ -1,19 +1,83 @@
 <?xml version="1.0"?>
-<analyzerinfo hash="7945290237982717629">
+<analyzerinfo hash="4013101821877172243">
+  <FileInfo check="Class">
+<class name="TimeMenu" file="D:/Desktop/EpicTD/Menu/TimeMenu.hpp" line="9" col="1" hash="3978697517413916591"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Menu/TimeMenu.hpp:15:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/Menu/TimeMenu.cpp" line="44" col="2" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Menu/TimeMenu.hpp:15:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/Menu/TimeMenu.cpp" line="44" col="2" value="0"/>
+  </FileInfo>
   <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="update" lineNumber="27"/>
+    <functiondecl functionName="render" lineNumber="42"/>
+    <functioncall functionName="Args"/>
+    <functioncall functionName="AttackGalacticTower"/>
+    <functioncall functionName="AttackStoneTower"/>
+    <functioncall functionName="AttackWoodTower"/>
+    <functioncall functionName="Configuration"/>
+    <functioncall functionName="Font"/>
+    <functioncall functionName="GalacticTower"/>
+    <functioncall functionName="GalacticTower_bullet"/>
+    <functioncall functionName="GalacticTower_weapon"/>
+    <functioncall functionName="GameBack"/>
     <functioncall functionName="GameGUI"/>
+    <functioncall functionName="GameMap"/>
+    <functioncall functionName="GameOver"/>
+    <functioncall functionName="GameOverTheme"/>
+    <functioncall functionName="GameWin"/>
+    <functioncall functionName="IDENTIFIER"/>
     <functioncall functionName="InfoMenu"/>
+    <functioncall functionName="ItemsMenu"/>
+    <functioncall functionName="LeafbugEnemy"/>
+    <functioncall functionName="MagmaCrab"/>
+    <functioncall functionName="MainMenu"/>
+    <functioncall functionName="MainTheme"/>
+    <functioncall functionName="MenuGUI"/>
+    <functioncall functionName="Music"/>
+    <functioncall functionName="PauseMenu"/>
+    <functioncall functionName="RESOURCE"/>
+    <functioncall functionName="ResourceManager"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Font , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: SoundBuffer , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Texture , int &gt;"/>
+    <functioncall functionName="Scorpion"/>
+    <functioncall functionName="SoundBuffer"/>
+    <functioncall functionName="StoneTower"/>
+    <functioncall functionName="StoneTower_bullet"/>
+    <functioncall functionName="StoneTower_weapon"/>
+    <functioncall functionName="Texture"/>
+    <functioncall functionName="TimeMenu"/>
+    <functioncall functionName="WoodTower"/>
+    <functioncall functionName="WoodTower_bullet"/>
+    <functioncall functionName="WoodTower_weapon"/>
     <functioncall functionName="_background"/>
     <functioncall functionName="_balance"/>
     <functioncall functionName="_hp"/>
     <functioncall functionName="_time"/>
+    <functioncall functionName="args"/>
+    <functioncall functionName="at"/>
     <functioncall functionName="balance"/>
     <functioncall functionName="colorText"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
     <functioncall functionName="draw"/>
+    <functioncall functionName="emplace"/>
+    <functioncall functionName="forward"/>
     <functioncall functionName="get"/>
     <functioncall functionName="hours"/>
     <functioncall functionName="hp"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="loadFromFile"/>
     <functioncall functionName="minutes"/>
+    <functioncall functionName="move"/>
+    <functioncall functionName="openFromFile"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="runtime_error"/>
     <functioncall functionName="seconds"/>
     <functioncall functionName="setCharacterSize"/>
     <functioncall functionName="setFillColor"/>
@@ -24,5 +88,6 @@
     <functioncall functionName="startPos"/>
     <functioncall functionName="string"/>
     <functioncall functionName="to_string"/>
+    <functioncall functionName="typename"/>
   </FileInfo>
 </analyzerinfo>
