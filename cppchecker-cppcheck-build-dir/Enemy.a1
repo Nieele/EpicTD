@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1108224028458604347">
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_startRect&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_startRect&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp">
+            <location file="D:\Desktop\EpicTD\Helpers\AnimationHelper.hpp" line="32" column="4"/>
+            <symbol>_startRect</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Object.hpp" line="11" column="2"/>
+            <symbol>Object</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="AnimationHelper::Animation" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="25" col="2" hash="17799459738175156914"/>
+<class name="Enemy" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp" line="11" col="1" hash="15364948096681807923"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:49:10" my-argnr="1" my-argname="movementTrajectory" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="118" col="32" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp:50:14" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="51" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:24:5" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="48" col="12" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:48:10" my-argnr="1" my-argname="movementTrajectory" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="110" col="34" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/GeneralObjects/Enemy.hpp:49:10" my-argnr="1" my-argname="movementTrajectory" file="D:/Desktop/EpicTD/GeneralObjects/Enemy.cpp" line="118" col="32" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="initAnimations" lineNumber="3"/>
+    <functiondecl functionName="isAlive" lineNumber="92"/>
+    <functiondecl functionName="isReachedEnd" lineNumber="98"/>
+    <functiondecl functionName="changeHp" lineNumber="103"/>
+    <functiondecl functionName="checkReachedEnd" lineNumber="108"/>
+    <functiondecl functionName="changeDirectionMovement" lineNumber="114"/>
+    <functiondecl functionName="moveInDirection" lineNumber="125"/>
+    <functiondecl functionName="moveAlongMotionVector" lineNumber="149"/>
+    <functiondecl functionName="animationInDirection" lineNumber="158"/>
+    <functiondecl functionName="checkIsAlive" lineNumber="180"/>
+    <functiondecl functionName="update" lineNumber="185"/>
+    <functiondecl functionName="render" lineNumber="194"/>
+    <functioncall functionName="Animation"/>
+    <functioncall functionName="AnimationHelper"/>
+    <functioncall functionName="Args"/>
+    <functioncall functionName="AttackGalacticTower"/>
+    <functioncall functionName="AttackStoneTower"/>
+    <functioncall functionName="AttackWoodTower"/>
+    <functioncall functionName="Configuration"/>
+    <functioncall functionName="DOWN"/>
+    <functioncall functionName="Enemy"/>
+    <functioncall functionName="Entity"/>
+    <functioncall functionName="Font"/>
+    <functioncall functionName="GalacticTower"/>
+    <functioncall functionName="GalacticTower_bullet"/>
+    <functioncall functionName="GalacticTower_weapon"/>
+    <functioncall functionName="GameBack"/>
+    <functioncall functionName="GameGUI"/>
+    <functioncall functionName="GameMap"/>
+    <functioncall functionName="GameOver"/>
+    <functioncall functionName="GameOverTheme"/>
+    <functioncall functionName="GameWin"/>
+    <functioncall functionName="HpBar"/>
+    <functioncall functionName="IDENTIFIER"/>
+    <functioncall functionName="InfoMenu"/>
+    <functioncall functionName="IntRect"/>
+    <functioncall functionName="ItemsMenu"/>
+    <functioncall functionName="LEFT"/>
+    <functioncall functionName="LeafbugEnemy"/>
+    <functioncall functionName="MagmaCrab"/>
+    <functioncall functionName="MainMenu"/>
+    <functioncall functionName="MainTheme"/>
+    <functioncall functionName="MenuGUI"/>
+    <functioncall functionName="Music"/>
+    <functioncall functionName="Object"/>
+    <functioncall functionName="PauseMenu"/>
+    <functioncall functionName="RESOURCE"/>
+    <functioncall functionName="RIGHT"/>
+    <functioncall functionName="ResourceManager"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Font , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: SoundBuffer , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Texture , int &gt;"/>
+    <functioncall functionName="Scorpion"/>
+    <functioncall functionName="SoundBuffer"/>
+    <functioncall functionName="Sprite"/>
+    <functioncall functionName="StoneTower"/>
+    <functioncall functionName="StoneTower_bullet"/>
+    <functioncall functionName="StoneTower_weapon"/>
+    <functioncall functionName="Texture"/>
+    <functioncall functionName="UP"/>
+    <functioncall functionName="Vector2f"/>
+    <functioncall functionName="WoodTower"/>
+    <functioncall functionName="WoodTower_bullet"/>
+    <functioncall functionName="WoodTower_weapon"/>
+    <functioncall functionName="_animationComponent"/>
+    <functioncall functionName="_animationTimer"/>
+    <functioncall functionName="_currentRect"/>
+    <functioncall functionName="_endRect"/>
+    <functioncall functionName="_height"/>
+    <functioncall functionName="_hp"/>
+    <functioncall functionName="_hpBar"/>
+    <functioncall functionName="_idTrajectory"/>
+    <functioncall functionName="_killed"/>
+    <functioncall functionName="_loot"/>
+    <functioncall functionName="_movementSpeed"/>
+    <functioncall functionName="_reachedEnd"/>
+    <functioncall functionName="_rotation"/>
+    <functioncall functionName="_sprite"/>
+    <functioncall functionName="_startRect"/>
+    <functioncall functionName="_textureSheet"/>
+    <functioncall functionName="_timer"/>
+    <functioncall functionName="_width"/>
+    <functioncall functionName="addAnimation"/>
+    <functioncall functionName="animationInDirection"/>
+    <functioncall functionName="animationTimer"/>
+    <functioncall functionName="args"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="changeDirectionMovement"/>
+    <functioncall functionName="checkIsAlive"/>
+    <functioncall functionName="checkReachedEnd"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="createAnimationComponent"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="emplace"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="forward"/>
+    <functioncall functionName="getPosition"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="hp"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="initAnimations"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="left"/>
+    <functioncall functionName="loadFromFile"/>
+    <functioncall functionName="loot"/>
+    <functioncall functionName="move"/>
+    <functioncall functionName="moveAlongMotionVector"/>
+    <functioncall functionName="moveInDirection"/>
+    <functioncall functionName="movementTrajectory"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="openFromFile"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="play"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="rotation"/>
+    <functioncall functionName="runtime_error"/>
+    <functioncall functionName="setPosition"/>
+    <functioncall functionName="setTexture"/>
+    <functioncall functionName="setTextureRect"/>
+    <functioncall functionName="sprite"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="target"/>
+    <functioncall functionName="temp"/>
+    <functioncall functionName="textureSheet"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="typename"/>
+    <functioncall functionName="update"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

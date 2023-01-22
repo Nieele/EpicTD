@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="13980602384285670492">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Item&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Item&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/ItemContainer.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Item.hpp" line="10" column="2"/>
+            <symbol>Item</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="ItemContainer" file="D:/Desktop/EpicTD/SimpleObjects/ItemContainer.hpp" line="7" col="1" hash="8709365424150739897"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="size" lineNumber="11"/>
+    <functiondecl functionName="select" lineNumber="21"/>
+    <functiondecl functionName="reset" lineNumber="27"/>
+    <functiondecl functionName="draw" lineNumber="43"/>
+    <functioncall functionName="Args"/>
+    <functioncall functionName="AttackGalacticTower"/>
+    <functioncall functionName="AttackStoneTower"/>
+    <functioncall functionName="AttackWoodTower"/>
+    <functioncall functionName="Configuration"/>
+    <functioncall functionName="Font"/>
+    <functioncall functionName="GalacticTower"/>
+    <functioncall functionName="GalacticTower_bullet"/>
+    <functioncall functionName="GalacticTower_weapon"/>
+    <functioncall functionName="GameBack"/>
+    <functioncall functionName="GameGUI"/>
+    <functioncall functionName="GameMap"/>
+    <functioncall functionName="GameOver"/>
+    <functioncall functionName="GameOverTheme"/>
+    <functioncall functionName="GameWin"/>
+    <functioncall functionName="IDENTIFIER"/>
+    <functioncall functionName="InfoMenu"/>
+    <functioncall functionName="Item"/>
+    <functioncall functionName="ItemContainer"/>
+    <functioncall functionName="ItemsMenu"/>
+    <functioncall functionName="LeafbugEnemy"/>
+    <functioncall functionName="MagmaCrab"/>
+    <functioncall functionName="MainMenu"/>
+    <functioncall functionName="MainTheme"/>
+    <functioncall functionName="MenuGUI"/>
+    <functioncall functionName="Music"/>
+    <functioncall functionName="PauseMenu"/>
+    <functioncall functionName="RESOURCE"/>
+    <functioncall functionName="ResourceManager"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Font , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: SoundBuffer , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Texture , int &gt;"/>
+    <functioncall functionName="Scorpion"/>
+    <functioncall functionName="SoundBuffer"/>
+    <functioncall functionName="StoneTower"/>
+    <functioncall functionName="StoneTower_bullet"/>
+    <functioncall functionName="StoneTower_weapon"/>
+    <functioncall functionName="Texture"/>
+    <functioncall functionName="WoodTower"/>
+    <functioncall functionName="WoodTower_bullet"/>
+    <functioncall functionName="WoodTower_weapon"/>
+    <functioncall functionName="args"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="emplace"/>
+    <functioncall functionName="emplace_back"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="forward"/>
+    <functioncall functionName="getId"/>
+    <functioncall functionName="getSprite"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="j"/>
+    <functioncall functionName="loadFromFile"/>
+    <functioncall functionName="move"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="openFromFile"/>
+    <functioncall functionName="pos"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="reset"/>
+    <functioncall functionName="runtime_error"/>
+    <functioncall functionName="setPosition"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="startPosItem"/>
+    <functioncall functionName="swap"/>
+    <functioncall functionName="target"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="typename"/>
+  </FileInfo>
+</analyzerinfo>

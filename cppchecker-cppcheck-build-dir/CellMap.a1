@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="8138628844848778504">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/CellMap.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Object.hpp" line="11" column="2"/>
+            <symbol>Object</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;render&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;render&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="D:/Desktop/EpicTD/SimpleObjects/CellMap.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\CellMap.hpp" line="25" column="7" info="Function in derived class"/>
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Object.hpp" line="21" column="15" info="Virtual function in base class"/>
+            <symbol>render</symbol>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/CellMap.hpp:18:7" my-argnr="1" my-argname="texture" file="D:/Desktop/EpicTD/SimpleObjects/CellMap.cpp" line="30" col="23" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setBlock" lineNumber="27"/>
+    <functiondecl functionName="occupy" lineNumber="36"/>
+    <functiondecl functionName="free" lineNumber="41"/>
+    <functiondecl functionName="isOccupied" lineNumber="46"/>
+    <functiondecl functionName="render" lineNumber="51"/>
+    <functioncall functionName="Object"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="pos"/>
+    <functioncall functionName="rectTexture"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="setPosition"/>
+    <functioncall functionName="setTexture"/>
+    <functioncall functionName="setTextureRect"/>
+    <functioncall functionName="statusOccupied"/>
+    <functioncall functionName="target"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

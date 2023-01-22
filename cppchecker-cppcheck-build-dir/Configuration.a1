@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5153131093997825467">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="initialize" lineNumber="9"/>
+    <functiondecl functionName="initBackgrounds" lineNumber="24"/>
+    <functiondecl functionName="initTextures" lineNumber="35"/>
+    <functiondecl functionName="initFonts" lineNumber="56"/>
+    <functiondecl functionName="initSounds" lineNumber="62"/>
+    <functiondecl functionName="initMusics" lineNumber="68"/>
+    <functioncall functionName="Args"/>
+    <functioncall functionName="AttackGalacticTower"/>
+    <functioncall functionName="AttackStoneTower"/>
+    <functioncall functionName="AttackWoodTower"/>
+    <functioncall functionName="Configuration"/>
+    <functioncall functionName="Font"/>
+    <functioncall functionName="GalacticTower"/>
+    <functioncall functionName="GalacticTower_bullet"/>
+    <functioncall functionName="GalacticTower_weapon"/>
+    <functioncall functionName="GameBack"/>
+    <functioncall functionName="GameGUI"/>
+    <functioncall functionName="GameMap"/>
+    <functioncall functionName="GameOver"/>
+    <functioncall functionName="GameOverTheme"/>
+    <functioncall functionName="GameWin"/>
+    <functioncall functionName="IDENTIFIER"/>
+    <functioncall functionName="InfoMenu"/>
+    <functioncall functionName="ItemsMenu"/>
+    <functioncall functionName="LeafbugEnemy"/>
+    <functioncall functionName="MagmaCrab"/>
+    <functioncall functionName="MainMenu"/>
+    <functioncall functionName="MainTheme"/>
+    <functioncall functionName="MenuGUI"/>
+    <functioncall functionName="Music"/>
+    <functioncall functionName="PauseMenu"/>
+    <functioncall functionName="RESOURCE"/>
+    <functioncall functionName="ResourceManager"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Font , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: SoundBuffer , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Texture , int &gt;"/>
+    <functioncall functionName="Scorpion"/>
+    <functioncall functionName="SoundBuffer"/>
+    <functioncall functionName="StoneTower"/>
+    <functioncall functionName="StoneTower_bullet"/>
+    <functioncall functionName="StoneTower_weapon"/>
+    <functioncall functionName="Texture"/>
+    <functioncall functionName="WoodTower"/>
+    <functioncall functionName="WoodTower_bullet"/>
+    <functioncall functionName="WoodTower_weapon"/>
+    <functioncall functionName="args"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="emplace"/>
+    <functioncall functionName="forward"/>
+    <functioncall functionName="get"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="initBackgrounds"/>
+    <functioncall functionName="initFonts"/>
+    <functioncall functionName="initMusics"/>
+    <functioncall functionName="initSounds"/>
+    <functioncall functionName="initTextures"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="load"/>
+    <functioncall functionName="loadFromFile"/>
+    <functioncall functionName="move"/>
+    <functioncall functionName="openFromFile"/>
+    <functioncall functionName="play"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="runtime_error"/>
+    <functioncall functionName="setLoop"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="typename"/>
+  </FileInfo>
+</analyzerinfo>

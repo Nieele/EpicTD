@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="11310754843617819634">
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_startRect&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_startRect&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/Entity.cpp">
+            <location file="D:\Desktop\EpicTD\Helpers\AnimationHelper.hpp" line="32" column="4"/>
+            <symbol>_startRect</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/Entity.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Object.hpp" line="11" column="2"/>
+            <symbol>Object</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp:12:2" call-funcname="AnimationHelper" call-argnr="1" file="D:/Desktop/EpicTD/SimpleObjects/Entity.cpp" line="44" col="28" my-id="D:/Desktop/EpicTD/SimpleObjects/Entity.hpp:18:10" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="AnimationHelper::Animation" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="25" col="2" hash="17799459738175156914"/>
+<class name="Entity" file="D:/Desktop/EpicTD/SimpleObjects/Entity.hpp" line="6" col="1" hash="7803376579401932075"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp:50:14" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="51" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Entity.hpp:14:5" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/SimpleObjects/Entity.cpp" line="24" col="45" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Entity.hpp:15:5" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/SimpleObjects/Entity.cpp" line="29" col="24" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="createAnimationComponent" lineNumber="42"/>
+    <functiondecl functionName="update" lineNumber="47"/>
+    <functiondecl functionName="render" lineNumber="49"/>
+    <functioncall functionName="Animation"/>
+    <functioncall functionName="AnimationHelper"/>
+    <functioncall functionName="Entity"/>
+    <functioncall functionName="IntRect"/>
+    <functioncall functionName="Object"/>
+    <functioncall functionName="_animationComponent"/>
+    <functioncall functionName="_animationTimer"/>
+    <functioncall functionName="_currentRect"/>
+    <functioncall functionName="_endRect"/>
+    <functioncall functionName="_height"/>
+    <functioncall functionName="_sprite"/>
+    <functioncall functionName="_startRect"/>
+    <functioncall functionName="_textureSheet"/>
+    <functioncall functionName="_timer"/>
+    <functioncall functionName="_width"/>
+    <functioncall functionName="animationTimer"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="left"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="setPosition"/>
+    <functioncall functionName="setTexture"/>
+    <functioncall functionName="setTextureRect"/>
+    <functioncall functionName="sprite"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="target"/>
+    <functioncall functionName="texture"/>
+    <functioncall functionName="textureSheet"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14279469608424584484">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="isAlive" lineNumber="7"/>
+    <functiondecl functionName="getHp" lineNumber="12"/>
+    <functiondecl functionName="getBalance" lineNumber="17"/>
+    <functiondecl functionName="changeHp" lineNumber="22"/>
+    <functiondecl functionName="changeBalance" lineNumber="27"/>
+    <functioncall functionName="Player"/>
+    <functioncall functionName="_balance"/>
+    <functioncall functionName="_hp"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

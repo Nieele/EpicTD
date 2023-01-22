@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7945290237982717629">
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="GameGUI"/>
+    <functioncall functionName="InfoMenu"/>
+    <functioncall functionName="_background"/>
+    <functioncall functionName="_balance"/>
+    <functioncall functionName="_hp"/>
+    <functioncall functionName="_time"/>
+    <functioncall functionName="balance"/>
+    <functioncall functionName="colorText"/>
+    <functioncall functionName="draw"/>
+    <functioncall functionName="get"/>
+    <functioncall functionName="hours"/>
+    <functioncall functionName="hp"/>
+    <functioncall functionName="minutes"/>
+    <functioncall functionName="seconds"/>
+    <functioncall functionName="setCharacterSize"/>
+    <functioncall functionName="setFillColor"/>
+    <functioncall functionName="setFont"/>
+    <functioncall functionName="setPosition"/>
+    <functioncall functionName="setString"/>
+    <functioncall functionName="setTexture"/>
+    <functioncall functionName="startPos"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="to_string"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17138620443211486182">
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/HpBar.hpp:18:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/SimpleObjects/HpBar.cpp" line="38" col="2" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/HpBar.hpp:18:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/SimpleObjects/HpBar.cpp" line="38" col="2" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="update" lineNumber="25"/>
+    <functiondecl functionName="render" lineNumber="36"/>
+    <functioncall functionName="HpBar"/>
+    <functioncall functionName="Red"/>
+    <functioncall functionName="Vector2f"/>
+    <functioncall functionName="_bar"/>
+    <functioncall functionName="_currentHp"/>
+    <functioncall functionName="_maxHp"/>
+    <functioncall functionName="_parent"/>
+    <functioncall functionName="_shiftHpBar_x"/>
+    <functioncall functionName="_sizeHpBar"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="draw"/>
+    <functioncall functionName="getPosition"/>
+    <functioncall functionName="hp"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="setFillColor"/>
+    <functioncall functionName="setPosition"/>
+    <functioncall functionName="setSize"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

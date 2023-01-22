@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="3704875862307987955">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Object&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/Object.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Object.hpp" line="11" column="2"/>
+            <symbol>Object</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="Object" file="D:/Desktop/EpicTD/SimpleObjects/Object.hpp" line="5" col="1" hash="10691612345655747133"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Object.hpp:21:15" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/SimpleObjects/Object.cpp" line="58" col="2" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Object.hpp:13:2" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/SimpleObjects/Object.cpp" line="27" col="12" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Object.hpp:21:15" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/SimpleObjects/Object.cpp" line="58" col="2" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="getPosition" lineNumber="41"/>
+    <functiondecl functionName="setPosition" lineNumber="46"/>
+    <functiondecl functionName="setTexture" lineNumber="51"/>
+    <functiondecl functionName="render" lineNumber="56"/>
+    <functioncall functionName="Object"/>
+    <functioncall functionName="Sprite"/>
+    <functioncall functionName="_sprite"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="draw"/>
+    <functioncall functionName="getPosition"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="setPosition"/>
+    <functioncall functionName="setTexture"/>
+    <functioncall functionName="texture"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

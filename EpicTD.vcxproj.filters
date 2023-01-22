@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{983a86c6-e698-4c81-bf67-86b22b6aa70c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States">
+      <UniqueIdentifier>{7e9befd4-1dd5-4a15-b00d-49ba0d8c78d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimpleObjects">
+      <UniqueIdentifier>{679a4673-be19-4fd0-bf71-88a8e076ea5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GeneralObjects">
+      <UniqueIdentifier>{f2b917b5-0a84-411f-b312-93a3a676e348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{a72219bc-a804-4293-9256-0ff92a63d41e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{dc0674d3-bdc5-447a-a122-85b770b1cde3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config\Waves">
+      <UniqueIdentifier>{faed271d-98e3-42a0-b2be-7e6d23a54190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{983b8138-2d47-40ae-ae49-0ef7bac89c67}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Button.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Configuration.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="States\GameOverState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\MainMenuState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\PauseMenuState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\State.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\WinState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\GameState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleObjects\Object.cpp">
+      <Filter>SimpleObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers\AnimationHelper.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleObjects\Entity.cpp">
+      <Filter>SimpleObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralObjects\Enemy.cpp">
+      <Filter>GeneralObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleObjects\HpBar.cpp">
+      <Filter>SimpleObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleObjects\CellMap.cpp">
+      <Filter>SimpleObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralObjects\GameField.cpp">
+      <Filter>GeneralObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralObjects\Wave.cpp">
+      <Filter>GeneralObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralObjects\Player.cpp">
+      <Filter>GeneralObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\ItemsMenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\TimeMenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleObjects\Item.cpp">
+      <Filter>SimpleObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleObjects\ItemContainer.cpp">
+      <Filter>SimpleObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralObjects\Tower.cpp">
+      <Filter>GeneralObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralObjects\Bullet.cpp">
+      <Filter>GeneralObjects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Button.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Chronometer.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Configuration.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\ResourceManager.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="States\GameOverState.hpp">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\MainMenuState.hpp">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\PauseMenuState.hpp">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\State.hpp">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\WinState.hpp">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\GameState.hpp">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleObjects\Object.hpp">
+      <Filter>SimpleObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\AnimationHelper.hpp">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleObjects\Entity.hpp">
+      <Filter>SimpleObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralObjects\Enemy.hpp">
+      <Filter>GeneralObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleObjects\HpBar.hpp">
+      <Filter>SimpleObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleObjects\CellMap.hpp">
+      <Filter>SimpleObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralObjects\GameField.hpp">
+      <Filter>GeneralObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralObjects\Wave.hpp">
+      <Filter>GeneralObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralObjects\Player.hpp">
+      <Filter>GeneralObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\ItemsMenu.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\TimeMenu.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleObjects\Item.hpp">
+      <Filter>SimpleObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleObjects\ItemContainer.hpp">
+      <Filter>SimpleObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralObjects\Tower.hpp">
+      <Filter>GeneralObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralObjects\Bullet.hpp">
+      <Filter>GeneralObjects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\gameMap.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="Config\trajectory.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="Config\window.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="Config\Waves\0_wave.ini">
+      <Filter>Config\Waves</Filter>
+    </None>
+    <None Include="Config\Waves\1_wave.ini">
+      <Filter>Config\Waves</Filter>
+    </None>
+    <None Include="Config\Waves\2_wave.ini">
+      <Filter>Config\Waves</Filter>
+    </None>
+  </ItemGroup>
+</Project>

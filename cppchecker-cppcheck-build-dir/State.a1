@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="12655117580068298024">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="quit" lineNumber="12"/>
+    <functiondecl functionName="getQuit" lineNumber="17"/>
+    <functiondecl functionName="updateMousePositions" lineNumber="22"/>
+    <functioncall functionName="State"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="getPosition"/>
+    <functioncall functionName="mapPixelToCoords"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="states"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="window"/>
+  </FileInfo>
+</analyzerinfo>

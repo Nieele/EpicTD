@@ -1,0 +1,2981 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Solution_Path">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="SolutionPath" type="xs:string" minOccurs="0" />
+                <xs:element name="SolutionVersion" type="xs:string" minOccurs="0" />
+                <xs:element name="PlogVersion" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="ModificationDate" msdata:DateTimeMode="Utc" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PVS-Studio_Analysis_Log">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FavIcon" type="xs:boolean" minOccurs="0" msdata:Ordinal="0" />
+                <xs:element name="Level" type="xs:unsignedInt" minOccurs="0" msdata:Ordinal="1" />
+                <xs:element name="DefaultOrder" type="xs:int" minOccurs="0" msdata:Ordinal="2" />
+                <xs:element name="ErrorCode" type="xs:string" msdata:Ordinal="3" />
+                <xs:element name="Message" type="xs:string" msdata:Ordinal="4" />
+                <xs:element name="Project" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+                <xs:element name="ShortFile" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+                <xs:element name="Line" type="xs:int" msdata:Ordinal="7" />
+                <xs:element name="FalseAlarm" type="xs:boolean" minOccurs="0" msdata:Ordinal="8" />
+                <xs:element name="File" type="xs:string" msdata:Ordinal="9" />
+                <xs:element name="CodePrev" type="xs:unsignedInt" minOccurs="0" msdata:Ordinal="10" />
+                <xs:element name="CodeCurrent" type="xs:unsignedInt" minOccurs="0" msdata:Ordinal="11" />
+                <xs:element name="CodeNext" type="xs:unsignedInt" minOccurs="0" msdata:Ordinal="12" />
+                <xs:element name="TrialMessage" type="xs:boolean" minOccurs="0" msdata:Ordinal="13" />
+                <xs:element name="Analyzer" type="xs:int" minOccurs="0" msdata:Ordinal="14" />
+                <xs:element name="LineExtension" type="xs:string" minOccurs="0" msdata:Ordinal="15" />
+                <xs:element name="Retired" type="xs:boolean" default="false" minOccurs="0" msdata:Ordinal="16" />
+                <xs:element name="AnalyzedSourceFiles" type="xs:string" minOccurs="0" msdata:Ordinal="17" />
+                <xs:element name="CWECode" type="xs:string" minOccurs="0" msdata:Ordinal="18" />
+                <xs:element name="SAST" type="xs:string" minOccurs="0" msdata:Ordinal="19" />
+                <xs:element name="Positions" msdata:DataType="ProgramVerificationSystems.PVSStudio.CommonTypes.SourceFilePositions, PVS-Studio-vs2022, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" type="xs:anyType" minOccurs="0" msdata:Ordinal="20" />
+                <xs:element name="MISRA" type="xs:string" minOccurs="0" msdata:Ordinal="21" />
+              </xs:sequence>
+              <xs:attribute name="ErrorCodeNumeric" msdata:ReadOnly="true" msdata:Expression="IIF(LEN(ErrorCode) &lt; 2 OR (SUBSTRING(ErrorCode, 1, 1) &lt;&gt; 'V'), 0, CONVERT(SUBSTRING(ErrorCode, 2, LEN(ErrorCode) - 1), 'System.UInt32'))" type="xs:unsignedInt" use="prohibited" />
+              <xs:attribute name="CWECodeNumeric" msdata:ReadOnly="true" msdata:Expression="ISNULL(IIF(LEN(CWECode) &lt; 4 + 1 OR (SUBSTRING(CWECode, 1, 4) &lt;&gt; 'CWE-'), 4294967295, CONVERT(SUBSTRING(CWECode, 4 + 1, LEN(CWECode) - 4), 'System.UInt32')), 4294967295)" type="xs:unsignedInt" use="prohibited" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//PVS-Studio_Analysis_Log" />
+        <xs:field xpath="Line" />
+        <xs:field xpath="Message" />
+        <xs:field xpath="File" />
+        <xs:field xpath="ErrorCode" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Solution_Path>
+    <SolutionPath>D:\Desktop\EpicTD\EpicTD.sln</SolutionPath>
+    <SolutionVersion>17.0</SolutionVersion>
+    <PlogVersion>7</PlogVersion>
+    <ModificationDate>2023-01-22T00:18:08.6755306Z</ModificationDate>
+  </Solution_Path>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>1</DefaultOrder>
+    <ErrorCode>Renew</ErrorCode>
+    <Message>Your license will expire in 7 days. Click 'Renew' to learn more or contact us at support@viva64.com. This is an information message. You can continue using the analyzer with your current license. To hide this message, use the '--disableLicenseExpirationCheck' flag.</Message>
+    <Project />
+    <ShortFile />
+    <Line>0</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File />
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>0</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>0</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>2</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'errno_t' type. The system header file should be used: #include &lt;STDDEF.H&gt; or &lt;CRTDEFS.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt.h</ShortFile>
+    <Line>590</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</File>
+    <CodePrev>1769445</CodePrev>
+    <CodeCurrent>12093559</CodeCurrent>
+    <CodeNext>1912560142</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="590">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>3</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'wint_t' type. The system header file should be used: #include &lt;WCHAR.H&gt; or &lt;CRTDEFS.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt.h</ShortFile>
+    <Line>591</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</File>
+    <CodePrev>12093559</CodePrev>
+    <CodeCurrent>1912560142</CodeCurrent>
+    <CodeNext>3355273506</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="591">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>4</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'wctype_t' type. The system header file should be used: #include &lt;WCHAR.H&gt; or &lt;CRTDEFS.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt.h</ShortFile>
+    <Line>592</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</File>
+    <CodePrev>1912560142</CodePrev>
+    <CodeCurrent>3355273506</CodeCurrent>
+    <CodeNext>193506927</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="592">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>5</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '__time32_t' type. The system header file should be used: #include &lt;CRTDEFS.H&gt; or &lt;SYS\STAT.H&gt; or &lt;SYS\TIMEB.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt.h</ShortFile>
+    <Line>593</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</File>
+    <CodePrev>3355273506</CodePrev>
+    <CodeCurrent>193506927</CodeCurrent>
+    <CodeNext>1544803855</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="593">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>6</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '__time64_t' type. The system header file should be used: #include &lt;TIME.H&gt; or &lt;SYS\STAT.H&gt; or &lt;SYS\TIMEB.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt.h</ShortFile>
+    <Line>594</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</File>
+    <CodePrev>193506927</CodePrev>
+    <CodeCurrent>1544803855</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="594">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>7</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_locale_t' type. The system header file should be used: #include &lt;CRTDEF.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt.h</ShortFile>
+    <Line>609</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>1253921314</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="609">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>8</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'mbstate_t' type. The system header file should be used: #include &lt;WCHAR.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt.h</ShortFile>
+    <Line>617</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>3087633767</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="617">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>9</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'time_t' type. The system header file should be used: #include &lt;TIME.H&gt; or &lt;SYS\STAT.H&gt; or &lt;SYS\TIMEB.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt.h</ShortFile>
+    <Line>631</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</File>
+    <CodePrev>43</CodePrev>
+    <CodeCurrent>772643191</CodeCurrent>
+    <CodeNext>100</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="631">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>10</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_HFILE' type. The system header file should be used: #include &lt;CRTDBG.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>23</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>3018561639</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="23">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>11</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_CRT_REPORT_HOOK' type. The system header file should be used: #include &lt;CRTDBG.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>49</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>1076575029</CodeCurrent>
+    <CodeNext>255419877</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="49">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>12</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_CRT_REPORT_HOOKW' type. The system header file should be used: #include &lt;CRTDBG.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>50</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>1076575029</CodePrev>
+    <CodeCurrent>255419877</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="50">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>13</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_CRT_ALLOC_HOOK' type. The system header file should be used: #include &lt;CRTDBG.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>56</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>4180396177</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="56">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>14</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_CRT_DUMP_CLIENT' type. The system header file should be used: #include &lt;CRTDBG.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>112</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>1953468660</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="112">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>15</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_CrtMemState' type. The system header file should be used: #include &lt;CRTDBG.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>127</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>10837459</CodePrev>
+    <CodeCurrent>590793</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="127">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>16</DefaultOrder>
+    <ErrorCode>V1061</ErrorCode>
+    <Message>Extending the 'std' namespace may result in undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stddef.h</ShortFile>
+    <Line>23</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stddef.h</File>
+    <CodePrev>420153</CodePrev>
+    <CodeCurrent>157432</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL58-CPP</SAST>
+    <Positions>
+      <Position lines="23">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stddef.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>17</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_onexit_t' type. The system header file should be used: #include &lt;STDLIB.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdlib.h</ShortFile>
+    <Line>77</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>852913547</CodeCurrent>
+    <CodeNext>13067</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="77">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>18</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_purecall_handler' type. The system header file should be used: #include &lt;STDLIB.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdlib.h</ShortFile>
+    <Line>159</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</File>
+    <CodePrev>1360265976</CodePrev>
+    <CodeCurrent>474004441</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="159">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>19</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'div_t' type. The system header file should be used: #include &lt;STDLIB.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdlib.h</ShortFile>
+    <Line>279</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</File>
+    <CodePrev>4645</CodePrev>
+    <CodeCurrent>5967</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="279">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>20</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'ldiv_t' type. The system header file should be used: #include &lt;STDLIB.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdlib.h</ShortFile>
+    <Line>285</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</File>
+    <CodePrev>9365</CodePrev>
+    <CodeCurrent>11663</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="285">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>21</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_LDOUBLE' type. The system header file should be used: #include &lt;STDLIB.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdlib.h</ShortFile>
+    <Line>398</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</File>
+    <CodePrev>23062521</CodePrev>
+    <CodeCurrent>40225</CodeCurrent>
+    <CodeNext>510805</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="398">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>22</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_LONGDOUBLE' type. The system header file should be used: #include &lt;STDLIB.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdlib.h</ShortFile>
+    <Line>432</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</File>
+    <CodePrev>148607</CodePrev>
+    <CodeCurrent>325025</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="432">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>23</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_LDBL12' type. The system header file should be used: #include &lt;STDLIB.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdlib.h</ShortFile>
+    <Line>440</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</File>
+    <CodePrev>92242033</CodePrev>
+    <CodeCurrent>20443</CodeCurrent>
+    <CodeNext>510805</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="440">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>24</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'FILE' type. The system header file should be used: #include &lt;STDIO.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wstdio.h</ShortFile>
+    <Line>31</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</File>
+    <CodePrev>11370699</CodePrev>
+    <CodeCurrent>2057</CodeCurrent>
+    <CodeNext>100</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="31">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>25</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'fpos_t' type. The system header file should be used: #include &lt;STDIO.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>73</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>96548679</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="73">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>26</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_fsize_t' type. The system header file should be used: #include &lt;IO.H&gt; or &lt;WCHAR.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wio.h</ShortFile>
+    <Line>33</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wio.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>3825170117</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="33">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>27</DefaultOrder>
+    <ErrorCode>V575</ErrorCode>
+    <Message>The null pointer is passed into 'wcstok' function. Inspect the third argument.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wstring.h</ShortFile>
+    <Line>244</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>3501270417</CodeCurrent>
+    <CodeNext>125</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <CWECode>CWE-628</CWECode>
+    <SAST>CERT-EXP37-C</SAST>
+    <Positions>
+      <Position lines="244">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>28</DefaultOrder>
+    <ErrorCode>V575</ErrorCode>
+    <Message>The null pointer is passed into 'wcstok' function. Inspect the third argument.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wstring.h</ShortFile>
+    <Line>258</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>3501270417</CodeCurrent>
+    <CodeNext>125</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <CWECode>CWE-628</CWECode>
+    <SAST>CERT-EXP37-C</SAST>
+    <Positions>
+      <Position lines="258">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstring.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>29</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_ino_t' type. The system header file should be used: #include &lt;WCHAR.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>types.h</ShortFile>
+    <Line>19</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>3849155611</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="19">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>30</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'ino_t' type. The system header file should be used: #include &lt;WCHAR.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>types.h</ShortFile>
+    <Line>22</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</File>
+    <CodePrev>3749503192</CodePrev>
+    <CodeCurrent>24155287</CodeCurrent>
+    <CodeNext>100</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="22">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>31</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_dev_t' type. The system header file should be used: #include &lt;SYS\TYPES.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>types.h</ShortFile>
+    <Line>31</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>4262573502</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="31">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>32</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'dev_t' type. The system header file should be used: #include &lt;SYS\TYPES.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>types.h</ShortFile>
+    <Line>34</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</File>
+    <CodePrev>3749503192</CodePrev>
+    <CodeCurrent>24161871</CodeCurrent>
+    <CodeNext>100</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="34">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>33</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_off_t' type. The system header file should be used: #include &lt;WCHAR.H&gt; or &lt;SYS\TYPES.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>types.h</ShortFile>
+    <Line>43</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>446100582</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="43">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>34</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'off_t' type. The system header file should be used: #include &lt;WCHAR.H&gt; or &lt;SYS\TYPES.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>types.h</ShortFile>
+    <Line>46</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</File>
+    <CodePrev>3749503192</CodePrev>
+    <CodeCurrent>24155551</CodeCurrent>
+    <CodeNext>100</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="46">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\types.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>35</DefaultOrder>
+    <ErrorCode>V802</ErrorCode>
+    <Message>On 64-bit platform, structure size can be reduced from 48 to 40 bytes by rearranging the fields according to their sizes in decreasing order.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stat.h</ShortFile>
+    <Line>40</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\stat.h</File>
+    <CodePrev>3127964</CodePrev>
+    <CodeCurrent>123</CodeCurrent>
+    <CodeNext>514259</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="40">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\sys\stat.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>36</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard '_HEAPINFO' type. The system header file should be used: #include &lt;MALLOC.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>malloc.h</ShortFile>
+    <Line>47</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\malloc.h</File>
+    <CodePrev>158097</CodePrev>
+    <CodeCurrent>81309</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="47">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\malloc.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>37</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'terminate_function' type. The system header file should be used: #include &lt;EH.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_terminate.h</ShortFile>
+    <Line>23</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_terminate.h</File>
+    <CodePrev>4284703571</CodePrev>
+    <CodeCurrent>4274269860</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="23">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_terminate.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>38</DefaultOrder>
+    <ErrorCode>V677</ErrorCode>
+    <Message>Custom declaration of a standard 'clock_t' type. The system header file should be used: #include &lt;TIME.H&gt;.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>time.h</ShortFile>
+    <Line>28</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\time.h</File>
+    <CodePrev>1769445</CodePrev>
+    <CodeCurrent>24183975</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL37-C</SAST>
+    <Positions>
+      <Position lines="28">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\time.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>39</DefaultOrder>
+    <ErrorCode>V1048</ErrorCode>
+    <Message>The 'bytestoWrite' variable was assigned the same value.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Utf.inl</ShortFile>
+    <Line>108</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\System\Utf.inl</File>
+    <CodePrev>2901261797</CodePrev>
+    <CodeCurrent>2485534176</CodeCurrent>
+    <CodeNext>3900063086</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <CWECode>CWE-1164</CWECode>
+    <Positions>
+      <Position lines="108">D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\System\Utf.inl</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>40</DefaultOrder>
+    <ErrorCode>V547</ErrorCode>
+    <Message>Expression 'input &lt;= 0x0010FFFF' is always true.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Utf.inl</ShortFile>
+    <Line>111</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\System\Utf.inl</File>
+    <CodePrev>2701541334</CodePrev>
+    <CodeCurrent>4274265749</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <CWECode>CWE-571</CWECode>
+    <Positions>
+      <Position lines="111">D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\System\Utf.inl</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>41</DefaultOrder>
+    <ErrorCode>V802</ErrorCode>
+    <Message>On 64-bit platform, structure size can be reduced from 128 to 120 bytes by rearranging the fields according to their sizes in decreasing order.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>RenderTarget.hpp</ShortFile>
+    <Line>458</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\Graphics\RenderTarget.hpp</File>
+    <CodePrev>6250017</CodePrev>
+    <CodeCurrent>123</CodeCurrent>
+    <CodeNext>593656361</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="458">D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\Graphics\RenderTarget.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>42</DefaultOrder>
+    <ErrorCode>V818</ErrorCode>
+    <Message>It is more efficient to use an initialization list '_idleColor(idleColor), _hoverColor(hoverColor), _activeColor(activeColor)' rather than an assignment operator.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Button.cpp</ShortFile>
+    <Line>3</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Components\Button.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>1761493593</CodeCurrent>
+    <CodeNext>4027515045</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="3,22,23,24">D:\Desktop\EpicTD\Components\Button.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>43</DefaultOrder>
+    <ErrorCode>V524</ErrorCode>
+    <Message>It is odd that the body of 'vswprintf' function is fully equivalent to the body of '_vswprintf_c' function.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wstdio.h</ShortFile>
+    <Line>1230</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</File>
+    <CodePrev>14234175</CodePrev>
+    <CodeCurrent>3465696133</CodeCurrent>
+    <CodeNext>865446492</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="1230,1166">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>44</DefaultOrder>
+    <ErrorCode>V524</ErrorCode>
+    <Message>It is odd that the body of '_swprintf_c_l' function is fully equivalent to the body of '_swprintf_l' function.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wstdio.h</ShortFile>
+    <Line>1585</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</File>
+    <CodePrev>14234175</CodePrev>
+    <CodeCurrent>3911196088</CodeCurrent>
+    <CodeNext>865446492</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="1585,1417">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>45</DefaultOrder>
+    <ErrorCode>V524</ErrorCode>
+    <Message>It is odd that the body of '_swprintf_c' function is fully equivalent to the body of 'swprintf' function.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wstdio.h</ShortFile>
+    <Line>1606</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</File>
+    <CodePrev>14234175</CodePrev>
+    <CodeCurrent>977798949</CodeCurrent>
+    <CodeNext>865446492</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="1606,1457">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>46</DefaultOrder>
+    <ErrorCode>V524</ErrorCode>
+    <Message>It is odd that the body of 'toUtf16' function is fully equivalent to the body of 'fromLatin1' function.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Utf.inl</ShortFile>
+    <Line>483</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\System\Utf.inl</File>
+    <CodePrev>2150770401</CodePrev>
+    <CodeCurrent>2806589068</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="483,412">D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\System\Utf.inl</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>47</DefaultOrder>
+    <ErrorCode>V524</ErrorCode>
+    <Message>It is odd that the body of 'toUtf32' function is fully equivalent to the body of 'fromLatin1' function.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Utf.inl</ShortFile>
+    <Line>631</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\System\Utf.inl</File>
+    <CodePrev>2150770401</CodePrev>
+    <CodeCurrent>2806589068</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="631,562">D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\System\Utf.inl</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>48</DefaultOrder>
+    <ErrorCode>V730</ErrorCode>
+    <Message>Not all members of a class are initialized inside the constructor. Consider inspecting: array.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Glsl.inl</ShortFile>
+    <Line>79</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\Graphics\Glsl.inl</File>
+    <CodePrev>1342177307</CodePrev>
+    <CodeCurrent>3721235318</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <CWECode>CWE-457</CWECode>
+    <SAST>CERT-EXP53-CPP</SAST>
+    <Positions>
+      <Position lines="79">D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\Graphics\Glsl.inl</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>49</DefaultOrder>
+    <ErrorCode>V730</ErrorCode>
+    <Message>Not all members of a class are initialized inside the constructor. Consider inspecting: x, y, z, w.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Glsl.inl</ShortFile>
+    <Line>145</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\Graphics\Glsl.inl</File>
+    <CodePrev>1342177307</CodePrev>
+    <CodeCurrent>2003110657</CodeCurrent>
+    <CodeNext>735662</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <CWECode>CWE-457</CWECode>
+    <SAST>CERT-EXP53-CPP</SAST>
+    <Positions>
+      <Position lines="145">D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\Graphics\Glsl.inl</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>50</DefaultOrder>
+    <ErrorCode>V1003</ErrorCode>
+    <Message>The macro '_BLOCK_TYPE' is a dangerous expression. The parameter 'block' must be surrounded by parentheses.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>94</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>2659419873</CodeCurrent>
+    <CodeNext>3359137186</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="94">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>51</DefaultOrder>
+    <ErrorCode>V1003</ErrorCode>
+    <Message>The macro '_BLOCK_SUBTYPE' is a dangerous expression. The parameter 'block' must be surrounded by parentheses.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>95</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>2659419873</CodePrev>
+    <CodeCurrent>3359137186</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="95">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>52</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'calloc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>289</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>3164529458</CodeCurrent>
+    <CodeNext>1277551018</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="289">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>53</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'free' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>291</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>1277551018</CodePrev>
+    <CodeCurrent>3076642234</CodeCurrent>
+    <CodeNext>1539895554</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="291">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>54</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'malloc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>292</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>3076642234</CodePrev>
+    <CodeCurrent>1539895554</CodeCurrent>
+    <CodeNext>4230075838</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="292">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>55</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'realloc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>crtdbg.h</ShortFile>
+    <Line>294</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</File>
+    <CodePrev>4230075838</CodePrev>
+    <CodeCurrent>3811566504</CodeCurrent>
+    <CodeNext>3878496760</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="294">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\crtdbg.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>56</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'fclose' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>571</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>475637875</CodePrev>
+    <CodeCurrent>1087511900</CodeCurrent>
+    <CodeNext>1088888169</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="571">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>57</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'fflush' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>572</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>1087511900</CodePrev>
+    <CodeCurrent>1088888169</CodeCurrent>
+    <CodeNext>2690259786</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="572">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>58</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'fgetc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>573</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>1088888169</CodePrev>
+    <CodeCurrent>2690259786</CodeCurrent>
+    <CodeNext>169873885</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="573">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>59</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'fputc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>574</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>2690259786</CodePrev>
+    <CodeCurrent>169873885</CodeCurrent>
+    <CodeNext>1405197015</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="574">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>60</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'fread' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>575</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>169873885</CodePrev>
+    <CodeCurrent>1405197015</CodeCurrent>
+    <CodeNext>2059874031</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="575">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>61</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'fseek' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>577</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>2059874031</CodePrev>
+    <CodeCurrent>3104419353</CodeCurrent>
+    <CodeNext>112434737</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="577">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>62</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'ftell' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>579</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>112434737</CodePrev>
+    <CodeCurrent>553458457</CodeCurrent>
+    <CodeNext>130094462</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="579">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>63</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'fwrite' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>581</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>130094462</CodePrev>
+    <CodeCurrent>3605416478</CodeCurrent>
+    <CodeNext>3490323137</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="581">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>64</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'getc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>582</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>3605416478</CodePrev>
+    <CodeCurrent>3490323137</CodeCurrent>
+    <CodeNext>253876238</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="582">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>65</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'putc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>583</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>3490323137</CodePrev>
+    <CodeCurrent>253876238</CodeCurrent>
+    <CodeNext>564441723</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="583">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>66</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'ungetc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>584</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>253876238</CodePrev>
+    <CodeCurrent>564441723</CodeCurrent>
+    <CodeNext>100</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="584">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>67</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'vsnprintf' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>1422</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>2461365821</CodePrev>
+    <CodeCurrent>3836049641</CodeCurrent>
+    <CodeNext>4089237</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="1422">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>68</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'snprintf' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>stdio.h</ShortFile>
+    <Line>1912</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</File>
+    <CodePrev>2461365821</CodePrev>
+    <CodeCurrent>1918138908</CodeCurrent>
+    <CodeNext>4089237</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="1912">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>69</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'fgetwc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wstdio.h</ShortFile>
+    <Line>252</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</File>
+    <CodePrev>475637875</CodePrev>
+    <CodeCurrent>3222012623</CodeCurrent>
+    <CodeNext>63978188</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="252">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>70</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'fputwc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wstdio.h</ShortFile>
+    <Line>253</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</File>
+    <CodePrev>3222012623</CodePrev>
+    <CodeCurrent>63978188</CodeCurrent>
+    <CodeNext>141583987</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="253">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>71</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'ungetwc' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wstdio.h</ShortFile>
+    <Line>254</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</File>
+    <CodePrev>63978188</CodePrev>
+    <CodeCurrent>141583987</CodeCurrent>
+    <CodeNext>100</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="254">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wstdio.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>72</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswalpha' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>128</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>1489368640</CodeCurrent>
+    <CodeNext>180744423</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="128">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>73</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswupper' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>129</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>1489368640</CodePrev>
+    <CodeCurrent>180744423</CodeCurrent>
+    <CodeNext>3804624181</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="129">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>74</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswlower' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>130</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>180744423</CodePrev>
+    <CodeCurrent>3804624181</CodeCurrent>
+    <CodeNext>1053161100</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="130">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>75</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswdigit' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>131</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>3804624181</CodePrev>
+    <CodeCurrent>1053161100</CodeCurrent>
+    <CodeNext>1068596685</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="131">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>76</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswxdigit' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>132</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>1053161100</CodePrev>
+    <CodeCurrent>1068596685</CodeCurrent>
+    <CodeNext>1959129115</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="132">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>77</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswspace' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>133</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>1068596685</CodePrev>
+    <CodeCurrent>1959129115</CodeCurrent>
+    <CodeNext>516288719</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="133">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>78</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswpunct' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>134</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>1959129115</CodePrev>
+    <CodeCurrent>516288719</CodeCurrent>
+    <CodeNext>69077939</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="134">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>79</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswblank' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>135</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>516288719</CodePrev>
+    <CodeCurrent>69077939</CodeCurrent>
+    <CodeNext>1660637521</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="135">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>80</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswalnum' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>136</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>69077939</CodePrev>
+    <CodeCurrent>1660637521</CodeCurrent>
+    <CodeNext>3968341517</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="136">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>81</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswprint' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>137</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>1660637521</CodePrev>
+    <CodeCurrent>3968341517</CodeCurrent>
+    <CodeNext>2081156610</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="137">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>82</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswgraph' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>138</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>3968341517</CodePrev>
+    <CodeCurrent>2081156610</CodeCurrent>
+    <CodeNext>2870467950</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="138">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>83</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iswcntrl' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>corecrt_wctype.h</ShortFile>
+    <Line>139</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</File>
+    <CodePrev>2081156610</CodePrev>
+    <CodeCurrent>2870467950</CodeCurrent>
+    <CodeNext>654206743</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="139">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_wctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>84</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'isalpha' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>193</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>221966860</CodePrev>
+    <CodeCurrent>1618668403</CodeCurrent>
+    <CodeNext>2054876633</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="193">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>85</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'isupper' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>194</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>1618668403</CodePrev>
+    <CodeCurrent>2054876633</CodeCurrent>
+    <CodeNext>846915584</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="194">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>86</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'islower' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>195</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>2054876633</CodePrev>
+    <CodeCurrent>846915584</CodeCurrent>
+    <CodeNext>2658855870</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="195">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>87</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'isdigit' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>196</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>846915584</CodePrev>
+    <CodeCurrent>2658855870</CodeCurrent>
+    <CodeNext>2741443147</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="196">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>88</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'isxdigit' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>197</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>2658855870</CodePrev>
+    <CodeCurrent>2741443147</CodeCurrent>
+    <CodeNext>4235914532</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="197">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>89</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'isspace' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>198</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>2741443147</CodePrev>
+    <CodeCurrent>4235914532</CodeCurrent>
+    <CodeNext>1048243697</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="198">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>90</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'ispunct' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>199</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>4235914532</CodePrev>
+    <CodeCurrent>1048243697</CodeCurrent>
+    <CodeNext>3538915869</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="199">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>91</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'isblank' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>200</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>1048243697</CodePrev>
+    <CodeCurrent>3538915869</CodeCurrent>
+    <CodeNext>2918378919</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="200">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>92</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'isalnum' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>201</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>3538915869</CodePrev>
+    <CodeCurrent>2918378919</CodeCurrent>
+    <CodeNext>3476856022</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="201">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>93</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'isprint' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>202</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>2918378919</CodePrev>
+    <CodeCurrent>3476856022</CodeCurrent>
+    <CodeNext>1991376655</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="202">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>94</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'isgraph' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>203</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>3476856022</CodePrev>
+    <CodeCurrent>1991376655</CodeCurrent>
+    <CodeNext>126066000</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="203">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>95</DefaultOrder>
+    <ErrorCode>V1059</ErrorCode>
+    <Message>The 'iscntrl' macro name overrides a reserved name from C standard. This may lead to undefined behavior.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ctype.h</ShortFile>
+    <Line>204</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</File>
+    <CodePrev>1991376655</CodePrev>
+    <CodeCurrent>126066000</CodeCurrent>
+    <CodeNext>100</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Button.cpp*D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp</AnalyzedSourceFiles>
+    <SAST>CERT-DCL51-CPP</SAST>
+    <Positions>
+      <Position lines="204">D:\Windows Kits\10\Include\10.0.19041.0\ucrt\ctype.h</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>96</DefaultOrder>
+    <ErrorCode>V832</ErrorCode>
+    <Message>It's better to use '= default;' syntax instead of empty constructor body.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Music.hpp</ShortFile>
+    <Line>63</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\Audio\Music.hpp</File>
+    <CodePrev>1342177307</CodePrev>
+    <CodeCurrent>4009</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\TimeMenu.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="63">D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\Audio\Music.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>97</DefaultOrder>
+    <ErrorCode>V824</ErrorCode>
+    <Message>It is recommended to use the 'make_unique' function to create smart pointers.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ResourceManager.hpp</ShortFile>
+    <Line>54</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Components\ResourceManager.hpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>3085430617</CodeCurrent>
+    <CodeNext>678410837</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\TimeMenu.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="54">D:\Desktop\EpicTD\Components\ResourceManager.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>98</DefaultOrder>
+    <ErrorCode>V824</ErrorCode>
+    <Message>It is recommended to use the 'make_unique' function to create smart pointers.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ResourceManager.hpp</ShortFile>
+    <Line>72</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Components\ResourceManager.hpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>4269581454</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\TimeMenu.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="72">D:\Desktop\EpicTD\Components\ResourceManager.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>99</DefaultOrder>
+    <ErrorCode>V730</ErrorCode>
+    <Message>Not all members of a class are initialized inside the constructor. Consider inspecting: offset, length.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Music.hpp</ShortFile>
+    <Line>63</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\Audio\Music.hpp</File>
+    <CodePrev>1342177307</CodePrev>
+    <CodeCurrent>4009</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\Components\Configuration.cpp*D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\TimeMenu.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</AnalyzedSourceFiles>
+    <CWECode>CWE-457</CWECode>
+    <SAST>CERT-EXP53-CPP</SAST>
+    <Positions>
+      <Position lines="63">D:\Desktop\EpicTD\_libraries\SFML-2.5.1\include\SFML\Audio\Music.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>100</DefaultOrder>
+    <ErrorCode>V690</ErrorCode>
+    <Message>The 'Object' class implements a move constructor, but lacks the move assignment operator. It is dangerous to use such a class.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Object.hpp</ShortFile>
+    <Line>5</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\SimpleObjects\Object.hpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>73206</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\GameField.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\SimpleObjects\CellMap.cpp*D:\Desktop\EpicTD\SimpleObjects\Entity.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="5">D:\Desktop\EpicTD\SimpleObjects\Object.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>101</DefaultOrder>
+    <ErrorCode>V690</ErrorCode>
+    <Message>The 'Animation' class implements a move constructor, but lacks the move assignment operator. It is dangerous to use such a class.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>AnimationHelper.hpp</ShortFile>
+    <Line>25</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Helpers\AnimationHelper.hpp</File>
+    <CodePrev>11496</CodePrev>
+    <CodeCurrent>1167091</CodeCurrent>
+    <CodeNext>5816</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\Entity.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp*D:\Desktop\EpicTD\States\GameState.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="25">D:\Desktop\EpicTD\Helpers\AnimationHelper.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>102</DefaultOrder>
+    <ErrorCode>V690</ErrorCode>
+    <Message>The 'AnimationHelper' class implements a move constructor, but lacks the move assignment operator. It is dangerous to use such a class.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>AnimationHelper.hpp</ShortFile>
+    <Line>9</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Helpers\AnimationHelper.hpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>37346376</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp*D:\Desktop\EpicTD\SimpleObjects\Entity.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp*D:\Desktop\EpicTD\States\GameState.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="9">D:\Desktop\EpicTD\Helpers\AnimationHelper.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>103</DefaultOrder>
+    <ErrorCode>V690</ErrorCode>
+    <Message>The 'Entity' class implements a move constructor, but lacks the move assignment operator. It is dangerous to use such a class.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Entity.hpp</ShortFile>
+    <Line>6</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\SimpleObjects\Entity.hpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>145680</CodeCurrent>
+    <CodeNext>187894</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\SimpleObjects\Entity.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp*D:\Desktop\EpicTD\States\GameState.cpp*D:\Desktop\EpicTD\States\MainMenuState.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="6">D:\Desktop\EpicTD\SimpleObjects\Entity.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>104</DefaultOrder>
+    <ErrorCode>V762</ErrorCode>
+    <Message>It is possible a virtual function was overridden incorrectly. See first argument of function 'update' in derived class 'Enemy' and base class 'Entity'.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Enemy.hpp</ShortFile>
+    <Line>32</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Enemy.hpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>597289962</CodeCurrent>
+    <CodeNext>4178685751</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp*D:\Desktop\EpicTD\States\GameState.cpp*D:\Desktop\EpicTD\States\MainMenuState.cpp</AnalyzedSourceFiles>
+    <CWECode>CWE-670</CWECode>
+    <Positions>
+      <Position lines="32">D:\Desktop\EpicTD\GeneralObjects\Enemy.hpp</Position>
+      <Position lines="20">D:\Desktop\EpicTD\SimpleObjects\Entity.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>105</DefaultOrder>
+    <ErrorCode>V690</ErrorCode>
+    <Message>The 'Enemy' class implements a move constructor, but lacks the move assignment operator. It is dangerous to use such a class.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Enemy.hpp</ShortFile>
+    <Line>11</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Enemy.hpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>36407</CodeCurrent>
+    <CodeNext>97429</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp*D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp*D:\Desktop\EpicTD\States\GameState.cpp*D:\Desktop\EpicTD\States\MainMenuState.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="11">D:\Desktop\EpicTD\GeneralObjects\Enemy.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>106</DefaultOrder>
+    <ErrorCode>V592</ErrorCode>
+    <Message>The expression was enclosed by parentheses twice: ((expression)). One pair of parentheses is unnecessary or misprint is present.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Bullet.cpp</ShortFile>
+    <Line>11</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp</File>
+    <CodePrev>987509074</CodePrev>
+    <CodeCurrent>1472088369</CodeCurrent>
+    <CodeNext>619949815</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="11">D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>107</DefaultOrder>
+    <ErrorCode>V807</ErrorCode>
+    <Message>Decreased performance. Consider creating a reference to avoid using the '_object.getPosition()' expression repeatedly.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Bullet.cpp</ShortFile>
+    <Line>21</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>3234465716</CodeCurrent>
+    <CodeNext>3155297697</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="21,22,23">D:\Desktop\EpicTD\GeneralObjects\Bullet.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>108</DefaultOrder>
+    <ErrorCode>V690</ErrorCode>
+    <Message>The 'Item' class implements a move constructor, but lacks the move assignment operator. It is dangerous to use such a class.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Item.hpp</ShortFile>
+    <Line>7</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\SimpleObjects\Item.hpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>18223</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp*D:\Desktop\EpicTD\SimpleObjects\Item.cpp*D:\Desktop\EpicTD\SimpleObjects\ItemContainer.cpp*D:\Desktop\EpicTD\States\GameState.cpp*D:\Desktop\EpicTD\States\MainMenuState.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="7">D:\Desktop\EpicTD\SimpleObjects\Item.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>109</DefaultOrder>
+    <ErrorCode>V690</ErrorCode>
+    <Message>The 'Tower' class implements a move constructor, but lacks the move assignment operator. It is dangerous to use such a class.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Tower.hpp</ShortFile>
+    <Line>15</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Tower.hpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>36732</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>D:\Desktop\EpicTD\GeneralObjects\Tower.cpp*D:\Desktop\EpicTD\Game.cpp*D:\Desktop\EpicTD\GeneralObjects\Wave.cpp*D:\Desktop\EpicTD\main.cpp*D:\Desktop\EpicTD\Menu\ItemsMenu.cpp*D:\Desktop\EpicTD\States\GameState.cpp*D:\Desktop\EpicTD\States\MainMenuState.cpp</AnalyzedSourceFiles>
+    <Positions>
+      <Position lines="15">D:\Desktop\EpicTD\GeneralObjects\Tower.hpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>110</DefaultOrder>
+    <ErrorCode>V823</ErrorCode>
+    <Message>Decreased performance. Object may be created in-place in the '_bullets' container. Consider replacing methods: 'push_back' -&gt; 'emplace_back'.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Tower.cpp</ShortFile>
+    <Line>121</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Tower.cpp</File>
+    <CodePrev>3216430036</CodePrev>
+    <CodeCurrent>3007224827</CodeCurrent>
+    <CodeNext>2287772585</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="121">D:\Desktop\EpicTD\GeneralObjects\Tower.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>111</DefaultOrder>
+    <ErrorCode>V522</ErrorCode>
+    <Message>There might be dereferencing of a potential null pointer '_targetEnemy'.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Tower.cpp</ShortFile>
+    <Line>130</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Tower.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>1632101377</CodeCurrent>
+    <CodeNext>125</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <CWECode>CWE-690</CWECode>
+    <SAST>CERT-MEM52-CPP</SAST>
+    <Positions>
+      <Position lines="130">D:\Desktop\EpicTD\GeneralObjects\Tower.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>112</DefaultOrder>
+    <ErrorCode>V807</ErrorCode>
+    <Message>Decreased performance. Consider creating a reference to avoid using the '_weapon.getPosition()' expression repeatedly.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Tower.cpp</ShortFile>
+    <Line>101</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Tower.cpp</File>
+    <CodePrev>1515703</CodePrev>
+    <CodeCurrent>3139752613</CodeCurrent>
+    <CodeNext>581214685</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="101,102,126,127">D:\Desktop\EpicTD\GeneralObjects\Tower.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>113</DefaultOrder>
+    <ErrorCode>V807</ErrorCode>
+    <Message>Decreased performance. Consider creating a reference to avoid using the '_targetEnemy-&gt;getPosition()' expression repeatedly.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Tower.cpp</ShortFile>
+    <Line>101</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Tower.cpp</File>
+    <CodePrev>1515703</CodePrev>
+    <CodeCurrent>3139752613</CodeCurrent>
+    <CodeNext>581214685</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="101,102,126,127">D:\Desktop\EpicTD\GeneralObjects\Tower.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>114</DefaultOrder>
+    <ErrorCode>V730</ErrorCode>
+    <Message>Not all members of a class are initialized inside the constructor. Consider inspecting: _lastAttack.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Tower.cpp</ShortFile>
+    <Line>5</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Tower.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>432809361</CodeCurrent>
+    <CodeNext>2626648420</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <CWECode>CWE-457</CWECode>
+    <SAST>CERT-EXP53-CPP</SAST>
+    <Positions>
+      <Position lines="5">D:\Desktop\EpicTD\GeneralObjects\Tower.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>115</DefaultOrder>
+    <ErrorCode>V550</ErrorCode>
+    <Message>An odd precise comparison: temp.x == 0. It's probably better to use a comparison with defined precision: fabs(A - B) &lt; Epsilon.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Enemy.cpp</ShortFile>
+    <Line>121</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp</File>
+    <CodePrev>2667976844</CodePrev>
+    <CodeCurrent>1247169228</CodeCurrent>
+    <CodeNext>125</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <CWECode>CWE-682</CWECode>
+    <SAST>CERT-FLP02-C</SAST>
+    <Positions>
+      <Position lines="121">D:\Desktop\EpicTD\GeneralObjects\Enemy.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>116</DefaultOrder>
+    <ErrorCode>V730</ErrorCode>
+    <Message>It is possible that not all members of a class are initialized inside the constructor. Consider inspecting: _event.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Game.cpp</ShortFile>
+    <Line>39</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Game.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>204021</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <CWECode>CWE-457</CWECode>
+    <SAST>CERT-EXP53-CPP</SAST>
+    <Positions>
+      <Position lines="39">D:\Desktop\EpicTD\Game.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>117</DefaultOrder>
+    <ErrorCode>V807</ErrorCode>
+    <Message>Decreased performance. Consider creating a reference to avoid using the '_items[i].getSprite()' expression repeatedly.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ItemsMenu.cpp</ShortFile>
+    <Line>14</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</File>
+    <CodePrev>1127676805</CodePrev>
+    <CodeCurrent>906153387</CodeCurrent>
+    <CodeNext>763184033</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="14,15,16">D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>118</DefaultOrder>
+    <ErrorCode>V823</ErrorCode>
+    <Message>Decreased performance. Object may be created in-place in the 'towers' container. Consider replacing methods: 'push_back' -&gt; 'emplace_back'.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ItemsMenu.cpp</ShortFile>
+    <Line>58</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</File>
+    <CodePrev>2837631212</CodePrev>
+    <CodeCurrent>1333305870</CodeCurrent>
+    <CodeNext>1354272235</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="58">D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>119</DefaultOrder>
+    <ErrorCode>V823</ErrorCode>
+    <Message>Decreased performance. Object may be created in-place in the 'towers' container. Consider replacing methods: 'push_back' -&gt; 'emplace_back'.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ItemsMenu.cpp</ShortFile>
+    <Line>66</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</File>
+    <CodePrev>2837631116</CodePrev>
+    <CodeCurrent>3093336615</CodeCurrent>
+    <CodeNext>780647523</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="66">D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>120</DefaultOrder>
+    <ErrorCode>V823</ErrorCode>
+    <Message>Decreased performance. Object may be created in-place in the 'towers' container. Consider replacing methods: 'push_back' -&gt; 'emplace_back'.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ItemsMenu.cpp</ShortFile>
+    <Line>74</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</File>
+    <CodePrev>2837631052</CodePrev>
+    <CodeCurrent>446804286</CodeCurrent>
+    <CodeNext>2737976387</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="74">D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>121</DefaultOrder>
+    <ErrorCode>V756</ErrorCode>
+    <Message>The 'i' counter is not used inside a nested loop. Consider inspecting usage of 'j' counter.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ItemsMenu.cpp</ShortFile>
+    <Line>87</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</File>
+    <CodePrev>2946015011</CodePrev>
+    <CodeCurrent>261174316</CodeCurrent>
+    <CodeNext>200436528</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="87,88">D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>122</DefaultOrder>
+    <ErrorCode>V556</ErrorCode>
+    <Message>The values of different enum types are compared: event.key.code == sf::Mouse::Left. Types: Key, Button.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ItemsMenu.cpp</ShortFile>
+    <Line>12</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</File>
+    <CodePrev>541570628</CodePrev>
+    <CodeCurrent>3561263511</CodeCurrent>
+    <CodeNext>1127676805</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <CWECode>CWE-697</CWECode>
+    <SAST>CERT-MSC01-C</SAST>
+    <Positions>
+      <Position lines="12">D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>123</DefaultOrder>
+    <ErrorCode>V556</ErrorCode>
+    <Message>The values of different enum types are compared: event.key.code == sf::Mouse::Left. Types: Key, Button.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ItemsMenu.cpp</ShortFile>
+    <Line>22</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</File>
+    <CodePrev>1083139247</CodePrev>
+    <CodeCurrent>3561263511</CodeCurrent>
+    <CodeNext>3113749</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <CWECode>CWE-697</CWECode>
+    <SAST>CERT-MSC01-C</SAST>
+    <Positions>
+      <Position lines="22">D:\Desktop\EpicTD\Menu\ItemsMenu.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>124</DefaultOrder>
+    <ErrorCode>V835</ErrorCode>
+    <Message>Passing cheap-to-copy argument by reference may lead to decreased performance. To avoid this, replace the first argument 'const enum Textures&amp; idTexture' with 'enum Textures idTexture'.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Item.cpp</ShortFile>
+    <Line>5</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\SimpleObjects\Item.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>670483909</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="5">D:\Desktop\EpicTD\SimpleObjects\Item.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>125</DefaultOrder>
+    <ErrorCode>V835</ErrorCode>
+    <Message>Passing cheap-to-copy argument by reference may lead to decreased performance. To avoid this, replace the first argument 'const enum Textures&amp; idTexture' with 'enum Textures idTexture'.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>Item.cpp</ShortFile>
+    <Line>12</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\SimpleObjects\Item.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>2021843380</CodeCurrent>
+    <CodeNext>317315</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="12">D:\Desktop\EpicTD\SimpleObjects\Item.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>126</DefaultOrder>
+    <ErrorCode>V823</ErrorCode>
+    <Message>Decreased performance. Object may be created in-place in the '_items' container. Consider replacing methods: 'push_back' -&gt; 'emplace_back'.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ItemContainer.cpp</ShortFile>
+    <Line>6</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\SimpleObjects\ItemContainer.cpp</File>
+    <CodePrev>3530031251</CodePrev>
+    <CodeCurrent>2292885068</CodeCurrent>
+    <CodeNext>1163548705</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="6">D:\Desktop\EpicTD\SimpleObjects\ItemContainer.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>127</DefaultOrder>
+    <ErrorCode>V823</ErrorCode>
+    <Message>Decreased performance. Object may be created in-place in the '_items' container. Consider replacing methods: 'push_back' -&gt; 'emplace_back'.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ItemContainer.cpp</ShortFile>
+    <Line>7</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\SimpleObjects\ItemContainer.cpp</File>
+    <CodePrev>2292885068</CodePrev>
+    <CodeCurrent>1163548705</CodeCurrent>
+    <CodeNext>11033</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="7">D:\Desktop\EpicTD\SimpleObjects\ItemContainer.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>128</DefaultOrder>
+    <ErrorCode>V756</ErrorCode>
+    <Message>The 'i' counter is not used inside a nested loop. Consider inspecting usage of 'j' counter.</Message>
+    <Project>EpicTD</Project>
+    <ShortFile>ItemContainer.cpp</ShortFile>
+    <Line>29</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>D:\Desktop\EpicTD\SimpleObjects\ItemContainer.cpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>647030021</CodeCurrent>
+    <CodeNext>161751545</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+    <Positions>
+      <Position lines="29,30">D:\Desktop\EpicTD\SimpleObjects\ItemContainer.cpp</Position>
+    </Positions>
+  </PVS-Studio_Analysis_Log>
+</NewDataSet>

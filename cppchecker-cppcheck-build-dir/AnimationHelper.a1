@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="16828578671325619939">
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_startRect&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_startRect&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="D:/Desktop/EpicTD/Helpers/AnimationHelper.cpp">
+            <location file="D:\Desktop\EpicTD\Helpers\AnimationHelper.hpp" line="32" column="4"/>
+            <symbol>_startRect</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;el&apos; can be declared as reference to const" verbose="Variable &apos;el&apos; can be declared as reference to const" cwe="398" file0="D:/Desktop/EpicTD/Helpers/AnimationHelper.cpp">
+            <location file="D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp" line="20" column="13" info="Variable &apos;el&apos; can be declared as reference to const"/>
+            <symbol>el</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;el&apos; can be declared as reference to const" verbose="Variable &apos;el&apos; can be declared as reference to const" cwe="398" file0="D:/Desktop/EpicTD/Helpers/AnimationHelper.cpp">
+            <location file="D:\Desktop\EpicTD\Helpers\AnimationHelper.cpp" line="44" column="14" info="Variable &apos;el&apos; can be declared as reference to const"/>
+            <symbol>el</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="AnimationHelper" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="9" col="1" hash="17464161440015610194"/>
+<class name="AnimationHelper::Animation" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="25" col="2" hash="17799459738175156914"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp:50:14" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp" line="51" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp:15:2" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.cpp" line="20" col="18" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp:16:2" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.cpp" line="27" col="18" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Helpers/AnimationHelper.hpp:19:7" my-argnr="1" my-argname="key" file="D:/Desktop/EpicTD/Helpers/AnimationHelper.cpp" line="54" col="14" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="addAnimation" lineNumber="51"/>
+    <functiondecl functionName="play" lineNumber="61"/>
+    <functioncall functionName="Animation"/>
+    <functioncall functionName="AnimationHelper"/>
+    <functioncall functionName="IntRect"/>
+    <functioncall functionName="_animationTimer"/>
+    <functioncall functionName="_animations"/>
+    <functioncall functionName="_currentRect"/>
+    <functioncall functionName="_endRect"/>
+    <functioncall functionName="_height"/>
+    <functioncall functionName="_sprite"/>
+    <functioncall functionName="_startRect"/>
+    <functioncall functionName="_textureSheet"/>
+    <functioncall functionName="_timer"/>
+    <functioncall functionName="_width"/>
+    <functioncall functionName="animationTimer"/>
+    <functioncall functionName="first"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="frames_x"/>
+    <functioncall functionName="frames_y"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="key"/>
+    <functioncall functionName="left"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="play"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="second"/>
+    <functioncall functionName="setTexture"/>
+    <functioncall functionName="setTextureRect"/>
+    <functioncall functionName="sprite"/>
+    <functioncall functionName="startFrame_x"/>
+    <functioncall functionName="startFrame_y"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="textureSheet"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="width"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="3306535187947850145">
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_sprite&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_sprite&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/Item.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Item.cpp" line="20" column="5"/>
+            <symbol>_sprite</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_sprite&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_sprite&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/Item.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Item.cpp" line="27" column="5"/>
+            <symbol>_sprite</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Item&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Item&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="D:/Desktop/EpicTD/SimpleObjects/Item.cpp">
+            <location file="D:\Desktop\EpicTD\SimpleObjects\Item.hpp" line="10" column="2"/>
+            <symbol>Item</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="Item" file="D:/Desktop/EpicTD/SimpleObjects/Item.hpp" line="7" col="1" hash="11211915736047972581"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Item.hpp:22:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/SimpleObjects/Item.cpp" line="61" col="5" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Item.hpp:10:2" my-argnr="1" my-argname="idTexture" file="D:/Desktop/EpicTD/SimpleObjects/Item.cpp" line="7" col="52" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Item.hpp:13:2" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/SimpleObjects/Item.cpp" line="20" col="15" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Item.hpp:14:2" my-argnr="1" my-argname="other" file="D:/Desktop/EpicTD/SimpleObjects/Item.cpp" line="27" col="15" value="0"/>
+    <unsafe-usage my-id="D:/Desktop/EpicTD/SimpleObjects/Item.hpp:22:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/SimpleObjects/Item.cpp" line="61" col="5" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="getSprite" lineNumber="49"/>
+    <functiondecl functionName="getId" lineNumber="54"/>
+    <functiondecl functionName="render" lineNumber="59"/>
+    <functioncall functionName="Args"/>
+    <functioncall functionName="AttackGalacticTower"/>
+    <functioncall functionName="AttackStoneTower"/>
+    <functioncall functionName="AttackWoodTower"/>
+    <functioncall functionName="Configuration"/>
+    <functioncall functionName="Font"/>
+    <functioncall functionName="GalacticTower"/>
+    <functioncall functionName="GalacticTower_bullet"/>
+    <functioncall functionName="GalacticTower_weapon"/>
+    <functioncall functionName="GameBack"/>
+    <functioncall functionName="GameGUI"/>
+    <functioncall functionName="GameMap"/>
+    <functioncall functionName="GameOver"/>
+    <functioncall functionName="GameOverTheme"/>
+    <functioncall functionName="GameWin"/>
+    <functioncall functionName="IDENTIFIER"/>
+    <functioncall functionName="InfoMenu"/>
+    <functioncall functionName="Item"/>
+    <functioncall functionName="ItemsMenu"/>
+    <functioncall functionName="LeafbugEnemy"/>
+    <functioncall functionName="MagmaCrab"/>
+    <functioncall functionName="MainMenu"/>
+    <functioncall functionName="MainTheme"/>
+    <functioncall functionName="MenuGUI"/>
+    <functioncall functionName="Music"/>
+    <functioncall functionName="PauseMenu"/>
+    <functioncall functionName="RESOURCE"/>
+    <functioncall functionName="ResourceManager"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Font , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: SoundBuffer , int &gt;"/>
+    <functioncall functionName="ResourceManager &lt; sf :: Texture , int &gt;"/>
+    <functioncall functionName="Scorpion"/>
+    <functioncall functionName="SoundBuffer"/>
+    <functioncall functionName="StoneTower"/>
+    <functioncall functionName="StoneTower_bullet"/>
+    <functioncall functionName="StoneTower_weapon"/>
+    <functioncall functionName="Texture"/>
+    <functioncall functionName="WoodTower"/>
+    <functioncall functionName="WoodTower_bullet"/>
+    <functioncall functionName="WoodTower_weapon"/>
+    <functioncall functionName="_count"/>
+    <functioncall functionName="_id"/>
+    <functioncall functionName="_sprite"/>
+    <functioncall functionName="args"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="draw"/>
+    <functioncall functionName="emplace"/>
+    <functioncall functionName="forward"/>
+    <functioncall functionName="get"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="idTexture"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="loadFromFile"/>
+    <functioncall functionName="move"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="openFromFile"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="rect"/>
+    <functioncall functionName="runtime_error"/>
+    <functioncall functionName="setTexture"/>
+    <functioncall functionName="setTextureRect"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="typename"/>
+  </FileInfo>
+</analyzerinfo>

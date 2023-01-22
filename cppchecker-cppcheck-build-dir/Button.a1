@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="2327960739240375501">
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Components/Button.hpp:20:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/Components/Button.cpp" line="40" col="2" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Desktop/EpicTD/Components/Button.hpp:20:7" my-argnr="1" my-argname="target" file="D:/Desktop/EpicTD/Components/Button.cpp" line="40" col="2" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="isPressed" lineNumber="27"/>
+    <functiondecl functionName="update" lineNumber="32"/>
+    <functiondecl functionName="render" lineNumber="38"/>
+    <functiondecl functionName="updateButtonState" lineNumber="44"/>
+    <functiondecl functionName="updateColorButton" lineNumber="62"/>
+    <functioncall functionName="BTN_ACTIVE"/>
+    <functioncall functionName="BTN_CLICKED"/>
+    <functioncall functionName="BTN_HOVER"/>
+    <functioncall functionName="BTN_IDLE"/>
+    <functioncall functionName="Button"/>
+    <functioncall functionName="Left"/>
+    <functioncall functionName="Vector2f"/>
+    <functioncall functionName="White"/>
+    <functioncall functionName="_activeColor"/>
+    <functioncall functionName="_buttonState"/>
+    <functioncall functionName="_hoverColor"/>
+    <functioncall functionName="_idleColor"/>
+    <functioncall functionName="_shape"/>
+    <functioncall functionName="_text"/>
+    <functioncall functionName="activeColor"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="contains"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="draw"/>
+    <functioncall functionName="font"/>
+    <functioncall functionName="getGlobalBounds"/>
+    <functioncall functionName="getPosition"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="hoverColor"/>
+    <functioncall functionName="idleColor"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="isButtonPressed"/>
+    <functioncall functionName="mousePos"/>
+    <functioncall functionName="setCharacterSize"/>
+    <functioncall functionName="setFillColor"/>
+    <functioncall functionName="setFont"/>
+    <functioncall functionName="setPosition"/>
+    <functioncall functionName="setSize"/>
+    <functioncall functionName="setString"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="text"/>
+    <functioncall functionName="updateButtonState"/>
+    <functioncall functionName="updateColorButton"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>
